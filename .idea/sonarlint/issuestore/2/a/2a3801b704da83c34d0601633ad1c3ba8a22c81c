@@ -1,0 +1,13 @@
+
+
+java:S1104"VMake inputEmail a static final constant or non-public and provide accessors if needed.(ÙøÍ±şÿÿÿÿ8Õ¤Êş1J$f8789241-077d-4d3d-946c-6a5f049d07bc
+¡
+java:S1104"YMake inputPassword a static final constant or non-public and provide accessors if needed.(ŸóÌÂúÿÿÿÿ8¿¥Êş1J$f9031c37-7b33-4212-8f64-51af33002234
+É
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ùõášşÿÿÿÿ8Ëé”Ìş1J$51781c99-4373-45ee-b033-f67d69e1ae84
+É
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Øê–Áøÿÿÿÿ8‚í•Ìş1J$d1a2580c-a728-4b44-8969-c279ce1778d0
+t
+java:S1172"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8şËÌş1J$71f0e1c1-e81f-40d2-b7e7-e73aaf7489a4
+}
+java:S1128";Remove this unused import 'com.jfoenix.controls.JFXButton'.(„•£8ñşÎËş1J$af3cf857-745e-4d78-856b-315a9906111c

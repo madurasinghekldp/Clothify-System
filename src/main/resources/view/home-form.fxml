@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.HomeFormController">
+   <children>
+      <AnchorPane maxHeight="70.0" prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: EDBB91;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#b05977" layoutX="345.0" layoutY="48.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Clothify" textAlignment="CENTER" wrappingWidth="154.39999999999986" AnchorPane.leftAnchor="345.0" AnchorPane.rightAnchor="345.60000000000014">
+               <font>
+                  <Font name="Arial Bold" size="39.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="71.2" prefHeight="330.0" prefWidth="600.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="71.0">
+         <children>
+            <GridPane prefHeight="330.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+               </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="body1" stylesheets="@../styles/bg-image.css" />
+                  <AnchorPane prefHeight="432.0" prefWidth="445.0" GridPane.columnIndex="1">
+                     <children>
+                        <AnchorPane layoutX="60.0" layoutY="61.0" prefHeight="379.0" prefWidth="318.0" AnchorPane.bottomAnchor="61.39999999999998" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="61.0">
+                           <children>
+                              <JFXButton layoutX="70.0" layoutY="120.0" onAction="#btnSignInOnAction" prefHeight="37.0" prefWidth="106.0" style="-fx-background-color: DA6969;" text="Sign In" textFill="WHITE" AnchorPane.topAnchor="120.0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="70.0" layoutY="225.0" text="Do you not have an account?" AnchorPane.bottomAnchor="136.6" />
+                              <JFXButton layoutX="70.0" layoutY="277.0" onAction="#btnSignUpOnAction" prefHeight="37.0" prefWidth="106.0" style="-fx-background-color: DA6969;" text="Sign Up" textFill="WHITE" AnchorPane.bottomAnchor="64.59999999999997">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="70.0" layoutY="72.0" text="Do you have an account?" AnchorPane.topAnchor="72.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

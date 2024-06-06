@@ -1,0 +1,17 @@
+
+
+java:S1104"VMake inputEmail a static final constant or non-public and provide accessors if needed.(ÙøÍ±şÿÿÿÿ8ß¹ÙËş1J$a6847b34-d7da-4d55-b143-59039f710115
+
+java:S1104"VMake inputFirst a static final constant or non-public and provide accessors if needed.(¶ò‡ƒúÿÿÿÿ8ìöÙËş1J$b63b3c4e-f1bd-4551-8dd3-3fcfa686b8ee
+
+java:S1104"UMake inputLast a static final constant or non-public and provide accessors if needed.(Š´›ùúÿÿÿÿ8«œÚËş1J$18b27b5f-3a93-4fc3-883a-8b14dde6d7fb
+—
+java:S1104"TMake inputDOB a static final constant or non-public and provide accessors if needed.(Ô¸İà8 ½ÚËş1J$f872d68f-7132-41db-9f4d-284676da0fd5
+›
+java:S1104"XMake inputAddress a static final constant or non-public and provide accessors if needed.(øŸ½ó8şÔÚËş1J$58ded28e-039e-4231-93ea-fdc974158637
+u
+java:S1172"2Remove this unused method parameter "actionEvent".(£íÙğ8ØĞÔÌş1J$8ddd2c32-2bb4-4cce-a4fb-2b129182b56b
+t
+java:S1172("2Remove this unused method parameter "actionEvent".(ÿ¬Úw8ú·ƒâş1J$319aa022-62ec-4374-b13e-11a0b454cdcb
+}
+java:S1128";Remove this unused import 'com.jfoenix.controls.JFXButton'.(„•£8¤úõóş1J$6c5f6956-10e6-4e80-820e-1a7562afcd34
