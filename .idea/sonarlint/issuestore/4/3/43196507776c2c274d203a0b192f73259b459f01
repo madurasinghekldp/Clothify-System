@@ -1,13 +1,19 @@
 
+¡
+java:S1104"YMake btnManageUser a static final constant or non-public and provide accessors if needed.(ìˆ¦´ÿÿÿÿÿ8´çåõş1J$8272a18d-6740-4247-8fea-f151afc85968
 Ä
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹ê”§8À¦­õş1J$931fa552-2118-4c49-a2bc-2a815d2013d9
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹ê”§8À¦­õş1J$692be915-4b72-49f8-abf2-93278670041e
+Ä
+java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÖÑÕ‰8óü­õş1J$ee8cf1eb-711a-48fd-9c6a-ce45d055660a
+Ä
+java:S1186("€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(§°úà8³™®õş1J$7cac18ef-a711-48de-bef3-e01cde8094db
+Ä
+java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÌÛş8–´®õş1J$4d7d5cfc-3511-4d1a-8e65-b580962ac2b1
 É
-java:S1186	"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷ Ùëÿÿÿÿÿ8ÃØ­õş1J$94724877-b263-4c22-87af-0f3963c25470
-Ä
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÖÑÕ‰8óü­õş1J$7da919a4-3f6b-4a88-a594-f0c6edec4789
-Ä
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(§°úà8³™®õş1J$31e69f1b-96b1-4e9a-815f-f0849dea1e85
-Ä
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÌÛş8–´®õş1J$a52956a2-778f-4589-bca5-7342c04375f1
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çşù¥üÿÿÿÿ8øÛ®õş1
+java:S1186."€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çşù¥üÿÿÿÿ8øÛ®õş1J$94b1d743-c565-4aef-89ba-7bd23ac87574
+Ã
+java:S11862"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ïÁ Y8Š²º‹ÿ1J$3e44c549-7241-41cb-93a7-fb596c2b1b74
+z
+java:S1172"2Remove this unused method parameter "actionEvent".(÷ Ùëÿÿÿÿÿ8õù×‹ÿ1J$66fad87c-67d1-464d-83dc-c1544bfbf244
+t
+java:S11725"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8æğ¸˜ÿ1J$e1a17e80-da16-4d2a-8aed-00de8dd5db76

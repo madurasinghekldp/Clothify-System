@@ -1,0 +1,46 @@
+
+r
+java:S3740"/Provide the parametrized type for this generic.(ìÒÑŒ8ƒÚÆ›ÿ1J$5511ea93-d2a5-4387-8bad-48ec3b9cb0b8
+r
+java:S3740"/Provide the parametrized type for this generic.(“ĞÃâ8ƒÚÆ›ÿ1J$fb5a5aa7-45a5-432e-aafd-a70544949cfc
+w
+java:S3740"/Provide the parametrized type for this generic.(ÊÚÎ¨ùÿÿÿÿ8ƒÚÆ›ÿ1J$45f7cec1-19df-40d9-a035-143ab114211f
+w
+java:S3740"/Provide the parametrized type for this generic.(°Äˆ´ÿÿÿÿÿ8„ÚÆ›ÿ1J$a18a734c-b6c8-490e-bce0-fa5f69d7de4a
+r
+java:S3740"/Provide the parametrized type for this generic.(ƒäÆ8„ÚÆ›ÿ1J$deb00f48-3826-494e-b731-d2ca31d3f467
+r
+java:S3740"/Provide the parametrized type for this generic.(¯ÿı°8„ÚÆ›ÿ1J$777630d3-b1ce-4e35-b412-508a07d44fa7
+–
+java:S1104"SMake inputId a static final constant or non-public and provide accessors if needed.(¶İº¡8…ÚÆ›ÿ1J$09380793-3e34-4b26-af37-cdc3dcf28469
+
+java:S1104"UMake inputName a static final constant or non-public and provide accessors if needed.(ØÒÅøÿÿÿÿ8…ÚÆ›ÿ1J$a01c86b7-63f3-4783-a159-a167ecf7df50
+
+java:S1104"VMake inputEmail a static final constant or non-public and provide accessors if needed.(ÙøÍ±şÿÿÿÿ8…ÚÆ›ÿ1J$9680915d-c95b-4bd2-9088-d033329de167
+ 
+java:S1104"XMake inputCompany a static final constant or non-public and provide accessors if needed.(³–†‰úÿÿÿÿ8…ÚÆ›ÿ1J$463177d1-a7c0-47f8-a85d-bc72beaf4f50
+›
+java:S1104"XMake inputAddress a static final constant or non-public and provide accessors if needed.(øŸ½ó8…ÚÆ›ÿ1J$e9784991-cffd-4b9e-bb09-da4cd1fd2286
+š
+java:S1104"WMake tblSupplier a static final constant or non-public and provide accessors if needed.(ìÒÑŒ8…ÚÆ›ÿ1J$7b0c9cd7-08b7-44ce-a4bc-6a781c608b2d
+”
+java:S1104"QMake colId a static final constant or non-public and provide accessors if needed.(“ĞÃâ8…ÚÆ›ÿ1J$06561ded-b9e9-421f-b861-a01e796c44ff
+›
+java:S1104"SMake colName a static final constant or non-public and provide accessors if needed.(ÊÚÎ¨ùÿÿÿÿ8…ÚÆ›ÿ1J$389900fe-01e7-49a3-99e2-888919159cf8
+
+java:S1104"VMake colCompany a static final constant or non-public and provide accessors if needed.(°Äˆ´ÿÿÿÿÿ8…ÚÆ›ÿ1J$410fda8c-5355-4b58-a272-305fd79f6135
+—
+java:S1104"TMake colEmail a static final constant or non-public and provide accessors if needed.(ƒäÆ8…ÚÆ›ÿ1J$731270e5-926b-4d54-a262-f5244fc48449
+™
+java:S1104"VMake colAddress a static final constant or non-public and provide accessors if needed.(¯ÿı°8…ÚÆ›ÿ1J$5ab7f1d8-1b4d-4245-961c-be716d7ee130
+É
+java:S11865"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(úË»‚ùÿÿÿÿ8’ÚÆ›ÿ1J$654626fe-218d-4727-ac6d-d47348e3e2fe
+Ã
+java:S1186D"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹¤8’ÚÆ›ÿ1J$8c9f72f7-2eb7-4efd-a1f2-59e3ca5a258d
+Ä
+java:S1186G"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(úşÎ½8’ÚÆ›ÿ1J$807bc857-83e3-4bfd-9e87-c0434ea515ed
+t
+java:S1172("2Remove this unused method parameter "actionEvent".(ÿ¬Úw8—ÚÆ›ÿ1J$22bf8c15-ca9f-4c99-b030-007725c7a78e
+u
+java:S11728"2Remove this unused method parameter "actionEvent".(Õ’Ä½8ªÚÆ›ÿ1J$01f554b6-d9c5-44ed-8174-1f43a6106bbf
+r	java:S106A"+Replace this use of System.out by a logger.(š—°øÿÿÿÿ8­èÈ›ÿ1J$4684c636-83f7-4580-a98c-729614bf5d7e

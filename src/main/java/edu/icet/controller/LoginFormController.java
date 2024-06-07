@@ -20,11 +20,29 @@ public class LoginFormController {
 
 
     public void btnLoginOnAction(ActionEvent actionEvent) {
-
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/navigation-form.fxml"));
+            Scene scene = new Scene(loader.load());
+            NavigationFormController controller = loader.getController();
+            controller.setStage(stage);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void btnResetOnAction(ActionEvent actionEvent) {
-
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/reset-password-form.fxml"));
+            Scene scene = new Scene(loader.load());
+            ResetPasswordFormController controller = loader.getController();
+            controller.setStage(stage);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void btnGoBackOnAction(ActionEvent actionEvent) {
