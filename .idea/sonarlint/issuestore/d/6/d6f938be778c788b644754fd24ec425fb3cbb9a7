@@ -1,17 +1,18 @@
 
 
-java:S1104"VMake inputEmail a static final constant or non-public and provide accessors if needed.(ÙøÍ±şÿÿÿÿ8ß¹ÙËş1J$a6847b34-d7da-4d55-b143-59039f710115
+java:S1104"VMake inputEmail a static final constant or non-public and provide accessors if needed.(ÙøÍ±şÿÿÿÿ8ÕúîÅÿ1J$1f234dfd-0bdc-45f9-b7df-9415f2867422
 
-java:S1104"VMake inputFirst a static final constant or non-public and provide accessors if needed.(¶ò‡ƒúÿÿÿÿ8ìöÙËş1J$b63b3c4e-f1bd-4551-8dd3-3fcfa686b8ee
+java:S1104"VMake inputFirst a static final constant or non-public and provide accessors if needed.(¶ò‡ƒúÿÿÿÿ8ÖúîÅÿ1J$028ef78f-5111-4998-a167-7a98d392aa91
 
-java:S1104"UMake inputLast a static final constant or non-public and provide accessors if needed.(Š´›ùúÿÿÿÿ8«œÚËş1J$18b27b5f-3a93-4fc3-883a-8b14dde6d7fb
+java:S1104"UMake inputLast a static final constant or non-public and provide accessors if needed.(Š´›ùúÿÿÿÿ8ÖúîÅÿ1J$7533a13f-2d9a-4959-b899-290d164a8ba1
 —
-java:S1104"TMake inputDOB a static final constant or non-public and provide accessors if needed.(Ô¸İà8 ½ÚËş1J$f872d68f-7132-41db-9f4d-284676da0fd5
+java:S1104"TMake inputDOB a static final constant or non-public and provide accessors if needed.(Ô¸İà8ÖúîÅÿ1J$c387cc7e-f16e-485d-b380-2761ae4f3b2d
 ›
-java:S1104"XMake inputAddress a static final constant or non-public and provide accessors if needed.(øŸ½ó8şÔÚËş1J$58ded28e-039e-4231-93ea-fdc974158637
+java:S1104"XMake inputAddress a static final constant or non-public and provide accessors if needed.(øŸ½ó8ÖúîÅÿ1J$d398b477-a9aa-43fb-9ff1-5f83fd3d956d
+É
+java:S1186K"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8âúîÅÿ1J$e260117c-854b-4962-91d0-df2ca1ebfaeb
 u
-java:S1172"2Remove this unused method parameter "actionEvent".(£íÙğ8ØĞÔÌş1J$8ddd2c32-2bb4-4cce-a4fb-2b129182b56b
+java:S1172'"2Remove this unused method parameter "actionEvent".(£íÙğ8çúîÅÿ1J$0a7a000e-0570-49a0-9921-a8cb6d6704b1
 t
-java:S1172("2Remove this unused method parameter "actionEvent".(ÿ¬Úw8ú·ƒâş1J$319aa022-62ec-4374-b13e-11a0b454cdcb
-}
-java:S1128";Remove this unused import 'com.jfoenix.controls.JFXButton'.(„•£8¤úõóş1J$6c5f6956-10e6-4e80-820e-1a7562afcd34
+java:S1172="2Remove this unused method parameter "actionEvent".(ÿ¬Úw8ıúîÅÿ1J$3bb864bd-d68b-4eeb-b3b1-6f16fe938516
+r	java:S106Z"+Replace this use of System.out by a logger.(·ùßóıÿÿÿÿ8ü¾úÅÿ1J$6d21ec10-81a2-49cb-9043-10c81917a209

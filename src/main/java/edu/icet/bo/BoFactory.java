@@ -1,6 +1,7 @@
 package edu.icet.bo;
 
 import edu.icet.bo.impl.SupplierBoImpl;
+import edu.icet.bo.impl.UserBoImpl;
 import edu.icet.util.BoType;
 
 public class BoFactory {
@@ -14,6 +15,7 @@ public class BoFactory {
     public <T extends SuperBo>T getBo(BoType type){
         switch (type){
             case SUPPLIER: return (T) new SupplierBoImpl();
+            case USER: return (T) new UserBoImpl();
         }
         return null;
     }

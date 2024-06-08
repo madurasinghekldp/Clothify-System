@@ -31,11 +31,12 @@ public class SupplierManageFormController {
 
     private Stage stage;
 
+    private SupplierBo supplierBo = BoFactory.getInstance().getBo(BoType.SUPPLIER);
+
     public void setStage(Stage stage) {
         this.stage = stage;
     }
 
-    private SupplierBo supplierBo = BoFactory.getInstance().getBo(BoType.SUPPLIER);
 
     public void btnGoBackOnAction(ActionEvent actionEvent) {
         try {

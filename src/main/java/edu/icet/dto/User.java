@@ -1,5 +1,6 @@
 package edu.icet.dto;
 
+import edu.icet.util.UserType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,7 @@ public class User {
     private String lastName;
     private LocalDate dob;
     private String address;
+    private UserType type;
     private String email;
     private String password;
 }

@@ -1,15 +1,21 @@
 
 •
-java:S1104"RMake digit1 a static final constant or non-public and provide accessors if needed.(Ôİö‡8“çòáş1J$87e47cf6-e434-408b-8f01-257fb931e50d
+java:S1104"RMake digit1 a static final constant or non-public and provide accessors if needed.(Ôİö‡8ô—¶Çÿ1J$38c1e16e-9f7a-4c84-ad82-c980bc8d02af
 ”
-java:S1104"RMake digit2 a static final constant or non-public and provide accessors if needed.(ø³¹R8ü†óáş1J$874c16cf-fba9-4774-9eff-98373f48b2d1
+java:S1104"RMake digit2 a static final constant or non-public and provide accessors if needed.(ø³¹R8ô—¶Çÿ1J$0bec1e15-5b38-4bd6-be19-806c524ca57d
 š
-java:S1104"RMake digit3 a static final constant or non-public and provide accessors if needed.(„ÔÄ´üÿÿÿÿ8¿¡óáş1J$3816f72d-8e30-4927-a6f8-242c8baa3182
+java:S1104"RMake digit3 a static final constant or non-public and provide accessors if needed.(„ÔÄ´üÿÿÿÿ8ô—¶Çÿ1J$ea2b7618-ae80-4815-9f56-a499d6acea67
 •
-java:S1104"RMake digit4 a static final constant or non-public and provide accessors if needed.(˜íÍØ8¥¹óáş1J$00f9a00d-a942-4d68-8387-9ac2bba4fc8b
+java:S1104"RMake digit4 a static final constant or non-public and provide accessors if needed.(˜íÍØ8ô—¶Çÿ1J$68e587c8-75bf-4449-bdb8-a463f8e47888
 š
-java:S1104"RMake digit5 a static final constant or non-public and provide accessors if needed.(ÀğÎıÿÿÿÿ8‘Ïóáş1J$82ce8375-f9f9-4c4d-8096-d0e709853b83
+java:S1104"RMake digit5 a static final constant or non-public and provide accessors if needed.(ÀğÎıÿÿÿÿ8ô—¶Çÿ1J$ba1c0644-9465-406e-a73a-05e319396eb9
+É
+java:S1186>"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8«¼¶Çÿ1J$52022fe8-8f6f-4abd-87a1-06e8c2f7fd47
+
+java:S1450"VRemove the "builder" field and declare it as a local variable in the relevant methods.(—ƒ¬¡øÿÿÿÿ8˜¶Çÿ1J$f2405d8d-476b-4769-a161-88cfd784c17f
 t
-java:S1172"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8¼ûâş1J$162e46fe-e456-4c46-acfe-e401f0bfed86
+java:S1172""2Remove this unused method parameter "actionEvent".(ÿ¬Úw8„˜¶Çÿ1J$5840ce11-fa3b-45ff-ae7c-86fbb73a9232
 u
-java:S1172%"2Remove this unused method parameter "actionEvent".(£íÙğ8Ô×¯âş1J$80757f2d-3279-4f33-b1c7-8119a55f8f8f
+java:S1172/"2Remove this unused method parameter "actionEvent".(£íÙğ8–˜¶Çÿ1J$b1c7d576-f04c-433b-8232-32c9392ee207
+s
+java:S1068"+Remove this unused "builder" private field.(—ƒ¬¡øÿÿÿÿ8˜˜¶Çÿ1J$49c2a58d-00e3-4f3f-83a9-977a5c60e8d3

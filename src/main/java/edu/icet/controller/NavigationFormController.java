@@ -2,6 +2,7 @@ package edu.icet.controller;
 
 import com.jfoenix.controls.JFXButton;
 import edu.icet.controller.supplier.SupplierManageFormController;
+import edu.icet.controller.user.UserManageFormController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -19,6 +20,16 @@ public class NavigationFormController {
     }
 
     public void btnManageUserOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/user-manage-form.fxml"));
+            Scene scene = new Scene(loader.load());
+            UserManageFormController controller = loader.getController();
+            controller.setStage(stage);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void btnManageSupplierOnAction(ActionEvent actionEvent) {

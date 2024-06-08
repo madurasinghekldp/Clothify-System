@@ -1,0 +1,39 @@
+
+w
+java:S3740"/Provide the parametrized type for this generic.(¢Ç„øÿÿÿÿ8©ñÌÀÿ1J$120e9bda-bae7-48c2-85d1-b4a27d588311
+r
+java:S3740"/Provide the parametrized type for this generic.(“ĞÃâ8½˜ÍÀÿ1J$ac6e99ed-a17d-4644-a542-482c057bdfc6
+–
+java:S1104"SMake inputId a static final constant or non-public and provide accessors if needed.(¶İº¡8øÏÆÀÿ1J$e6c83c22-eb76-4d17-a71d-d1d5a33ef4de
+¢
+java:S1104"ZMake inputFirstName a static final constant or non-public and provide accessors if needed.(ë¼¡Şüÿÿÿÿ8…÷ÆÀÿ1J$c01dc8ac-1be6-47ac-a4d3-6814dbe76d99
+œ
+java:S1104"YMake inputLastName a static final constant or non-public and provide accessors if needed.(«†‘ò8ÍœÉÀÿ1J$56081ee7-efe7-4f34-aafd-f3a8653bbd11
+—
+java:S1104"TMake inputDOB a static final constant or non-public and provide accessors if needed.(Ô¸İà8¾ ÊÀÿ1J$d846f97a-1284-4132-b588-7251341b98df
+›
+java:S1104"XMake inputAddress a static final constant or non-public and provide accessors if needed.(øŸ½ó8ÊŒËÀÿ1J$278bf65c-7a89-4a51-981a-fc4193a2852b
+
+java:S1104"UMake inputType a static final constant or non-public and provide accessors if needed.(ŠˆÊÔúÿÿÿÿ8òÏËÀÿ1J$e7318659-fb22-485c-a3d1-9196ccb5136b
+
+java:S1104"VMake inputEmail a static final constant or non-public and provide accessors if needed.(ÙøÍ±şÿÿÿÿ8ã—ÌÀÿ1J$9ed6cbb8-cac2-4b0c-a46a-819c36279141
+›
+java:S1104"SMake tblUser a static final constant or non-public and provide accessors if needed.(¢Ç„øÿÿÿÿ8¬ñÌÀÿ1J$2a03f0a6-95ae-49ae-990a-b1e3b682a396
+”
+java:S1104"QMake colId a static final constant or non-public and provide accessors if needed.(“ĞÃâ8À˜ÍÀÿ1J$c3572b9f-704a-4245-a22c-213d237b6273
+É
+java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(­‘–ûÿÿÿÿ8âÏÀÿ1J$b5ea5254-7fec-49a3-a03f-901a801adcfe
+É
+java:S11863"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÊêĞ«üÿÿÿÿ8•°ÏÀÿ1J$05d0e22e-68b3-40cb-afb2-498e68854a76
+É
+java:S11866"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‡¤«Ùùÿÿÿÿ8‰÷ÓÀÿ1J$aadb4f90-2792-412e-acbb-80658b2d4a52
+Ä
+java:S11869"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¬Ïğ‹8§¡ÔÀÿ1J$353e9922-1f4d-4bc3-8f76-75b1abfa499f
+t
+java:S1172#"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8¬ã×Àÿ1J$ae2ee4b2-ebc4-4ccd-a1f6-04d52fb199bb
+S
+java:S1128"6Remove this unused import 'javafx.fxml.Initializable'.(™ÎùÆ8Ä´ Åÿ1
+K
+java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ8Ä´ Åÿ1
+W
+java:S1128"5Remove this unused import 'java.util.ResourceBundle'.(ıÆ£¯øÿÿÿÿ8Ä´ Åÿ1

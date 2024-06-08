@@ -1,5 +1,5 @@
 package edu.icet.util;
 
 public enum DaoType {
-    SUPPLIER,PRODUCT
+    SUPPLIER,PRODUCT,USER
 }

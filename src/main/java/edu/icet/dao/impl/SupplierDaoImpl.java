@@ -15,4 +15,19 @@ public class SupplierDaoImpl implements SupplierDao {
         session.close();
         return true;
     }
+
+    @Override
+    public long getCount() {
+        Session session = HibernateUtil.getSession();
+        session.getTransaction().begin();
+        Integer count = (int) session.createQuery("SELECT COUNT(id) FROM supplier").uniqueResult();
+        session.getTransaction().commit();
+        session.close();
+        return count;
+    }
+
+    @Override
+    public String getLast() {
+        return null;
+    }
 }
