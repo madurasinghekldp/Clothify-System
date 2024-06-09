@@ -1,7 +1,9 @@
 
 ¡
-java:S1104"YMake inputPassword a static final constant or non-public and provide accessors if needed.(ŸóÌÂúÿÿÿÿ8¥Á¬âþ1J$cb7bd8ee-ed91-42d6-8325-69e71c6647db
-É
-java:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Úó¥üøÿÿÿÿ8£½­âþ1J$f28d0ae1-cd66-4251-be36-334f998f5491
+java:S1104"YMake inputPassword a static final constant or non-public and provide accessors if needed.(ŸóÌÂúÿÿÿÿ8Ù×íîÿ1J$f32079a9-42c2-4456-be40-194656df8129
 t
-java:S1172"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8Æ¥³âþ1J$a4d392b7-90ac-4dc9-969f-f677ceb5d7d9
+java:S1172%"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8é×íîÿ1J$befedfd9-a413-4616-a642-24daa4915f69
+z
+java:S11722"2Remove this unused method parameter "actionEvent".(Úó¥üøÿÿÿÿ8û×íîÿ1J$7c1fc023-4a94-4c4b-84f7-d453cb58cb12
+r	java:S106H"+Replace this use of System.out by a logger.(Ž³ð¸ûÿÿÿÿ8Òºžïÿ1J$b8c27b89-3b5c-4d46-bab0-97aff2e96cd9
+r	java:S106R"+Replace this use of System.out by a logger.(·ùßóýÿÿÿÿ8Ôºžïÿ1J$9f61f40b-289d-4065-82b7-341894216ce4

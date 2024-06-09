@@ -52,11 +52,11 @@
                                  </font>
                               </JFXButton>
                               <Label layoutX="46.0" layoutY="66.0" text="Please enter the code you got through email." textFill="#009917" AnchorPane.topAnchor="65.6" />
-                              <JFXTextField fx:id="digit1" focusColor="#da6969" layoutX="52.0" layoutY="145.0" prefHeight="26.0" prefWidth="32.0" unFocusColor="#da6969" />
-                              <JFXTextField fx:id="digit2" focusColor="#da6969" layoutX="97.0" layoutY="145.0" prefHeight="26.0" prefWidth="32.0" unFocusColor="#da6969" />
-                              <JFXTextField fx:id="digit3" focusColor="#da6969" layoutX="143.0" layoutY="145.0" prefHeight="26.0" prefWidth="32.0" unFocusColor="#da6969" />
-                              <JFXTextField fx:id="digit4" focusColor="#da6969" layoutX="191.0" layoutY="145.0" prefHeight="26.0" prefWidth="32.0" unFocusColor="#da6969" />
-                              <JFXTextField fx:id="digit5" focusColor="#da6969" layoutX="238.0" layoutY="145.0" prefHeight="26.0" prefWidth="32.0" unFocusColor="#da6969" />
+                              <JFXTextField fx:id="digit1" alignment="CENTER" focusColor="#da6969" layoutX="52.0" layoutY="145.0" prefHeight="26.0" prefWidth="32.0" unFocusColor="#da6969" />
+                              <JFXTextField fx:id="digit2" alignment="CENTER" focusColor="#da6969" layoutX="97.0" layoutY="145.0" prefHeight="26.0" prefWidth="32.0" unFocusColor="#da6969" />
+                              <JFXTextField fx:id="digit3" alignment="CENTER" focusColor="#da6969" layoutX="143.0" layoutY="145.0" prefHeight="26.0" prefWidth="32.0" unFocusColor="#da6969" />
+                              <JFXTextField fx:id="digit4" alignment="CENTER" focusColor="#da6969" layoutX="191.0" layoutY="145.0" prefHeight="26.0" prefWidth="32.0" unFocusColor="#da6969" />
+                              <JFXTextField fx:id="digit5" alignment="CENTER" focusColor="#da6969" layoutX="238.0" layoutY="145.0" prefHeight="26.0" prefWidth="32.0" unFocusColor="#da6969" />
                            </children>
                         </AnchorPane>
                      </children>

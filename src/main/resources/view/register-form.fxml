@@ -54,7 +54,7 @@
                               </JFXButton>
                               <JFXTextField fx:id="inputFirst" focusColor="#da6969" layoutX="68.0" layoutY="95.0" promptText="First Name" unFocusColor="#da6969" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="115.19999999999999" />
                               <JFXTextField fx:id="inputLast" focusColor="#da6969" layoutX="68.0" layoutY="157.0" promptText="Last Name" unFocusColor="#da6969" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="115.19999999999999" />
-                              <DatePicker fx:id="inputDOB" layoutX="68.0" layoutY="228.0" prefHeight="26.0" prefWidth="135.0" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="115.19999999999999" />
+                              <DatePicker fx:id="inputDOB" layoutX="68.0" layoutY="228.0" prefHeight="26.0" prefWidth="135.0" promptText="Date Of Birth" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="115.19999999999999" />
                               <JFXTextField fx:id="inputAddress" focusColor="#da6969" layoutX="70.0" layoutY="286.0" prefHeight="26.0" prefWidth="148.0" promptText="Address" unFocusColor="#da6969" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="113.0" />
                               <Label layoutX="68.0" layoutY="362.0" text="Please verify your email before going further." textFill="#009917" AnchorPane.bottomAnchor="81.20000000000002" />
                               <JFXTextField fx:id="inputEmail" focusColor="#da6969" layoutX="68.0" layoutY="36.0" prefHeight="26.0" prefWidth="148.0" promptText="Email" unFocusColor="#da6969" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="115.0" />

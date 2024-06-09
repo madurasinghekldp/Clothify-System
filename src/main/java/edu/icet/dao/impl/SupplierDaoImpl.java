@@ -30,4 +30,6 @@ public class SupplierDaoImpl implements SupplierDao {
     public String getLast() {
         return null;
     }
+
+
 }

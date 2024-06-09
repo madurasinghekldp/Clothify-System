@@ -6,6 +6,8 @@ import edu.icet.bo.BoFactory;
 import edu.icet.bo.UserBo;
 import edu.icet.controller.user.UserBuilder;
 import edu.icet.util.BoType;
+import edu.icet.util.OTPGenerator;
+import edu.icet.util.SendMailUtil;
 import edu.icet.util.UserType;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -28,6 +30,8 @@ public class RegisterFormController implements Initializable {
     public JFXTextField inputLast;
     public DatePicker inputDOB;
     public JFXTextField inputAddress;
+
+    private String otp;
     private Stage stage;
 
     private UserBo userBo = BoFactory.getInstance().getBo(BoType.USER);
@@ -38,24 +42,32 @@ public class RegisterFormController implements Initializable {
 
     public void btnContinueOnAction(ActionEvent actionEvent) {
         UserBuilder builder = new UserBuilder()
-                .setId(generateUserId())
                 .setEmail(inputEmail.getText())
                 .setFirstName(inputFirst.getText())
                 .setLastName(inputLast.getText())
                 .setDob(inputDOB.getValue())
                 .setAddress(inputAddress.getText())
                 .setType(UserType.USER);
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/verify-email-form.fxml"));
-            Scene scene = new Scene(loader.load());
-            VerifyEmailFormController controller = loader.getController();
-            controller.setStage(stage);
-            controller.setBuilder(builder);
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
+        if(userBo.getuserEntity(inputEmail.getText())!=null){
+            new Alert(Alert.AlertType.ERROR,"User already exists").show();
         }
+        else{
+            otp = new OTPGenerator().generateOTP();
+            new SendMailUtil(builder.getEmail(),otp).SendMail();
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/verify-email-form.fxml"));
+                Scene scene = new Scene(loader.load());
+                VerifyEmailFormController controller = loader.getController();
+                controller.setStage(stage);
+                controller.setBuilder(builder);
+                controller.setOtp(otp);
+                stage.setScene(scene);
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 
     public void btnGoBackOnAction(ActionEvent actionEvent) {
@@ -76,22 +88,5 @@ public class RegisterFormController implements Initializable {
 
     }
 
-    private String generateUserId() {
-        long count = userBo.getCount();
-        if (count == 0) {
-            return "U001";
-        }
-        String last = userBo.getLast();
-        Pattern pattern = Pattern.compile("[A-Za-z](\\d+)");
-        Matcher matcher = pattern.matcher(last);
-        if (matcher.find()) {
-            int number = Integer.parseInt(matcher.group(1));
-            number++;
-            System.out.println(number);
-            return String.format("U%03d", number);
-        } else {
-            new Alert(Alert.AlertType.WARNING,"hello").show();
-        }
-        return null;
-    }
+
 }

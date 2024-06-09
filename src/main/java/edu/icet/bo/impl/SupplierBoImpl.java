@@ -16,8 +16,4 @@ public class SupplierBoImpl implements SupplierBo {
         return supplierDao.save(new ModelMapper().map(dto, SupplierEntity.class));
     }
 
-    @Override
-    public long getCount() {
-        return 0;
-    }
 }

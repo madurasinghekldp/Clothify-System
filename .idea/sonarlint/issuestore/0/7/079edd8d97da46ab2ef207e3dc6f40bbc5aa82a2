@@ -1,0 +1,9 @@
+
+i
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(ÉÓŸ¥8ƒÔªàÿ1
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÓŸ¥8‰Ôªàÿ1
+W
+java:S1161":Add the "@Override" annotation above this method signature(‡èú×8‘Ôªàÿ1
+O
+java:S6126"2Replace this String concatenation with Text block.(³ˆ‡’8”Ôªàÿ1
+F	java:S106$"+Replace this use of System.out by a logger.(Çðõ"8˜Ôªàÿ1

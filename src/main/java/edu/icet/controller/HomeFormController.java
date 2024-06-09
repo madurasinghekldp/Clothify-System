@@ -1,5 +1,6 @@
 package edu.icet.controller;
 
+import edu.icet.dto.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -14,6 +15,7 @@ public class HomeFormController {
     public void setStage(Stage stage){
         this.stage = stage;
     }
+
     public void btnSignInOnAction(ActionEvent actionEvent) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/login-form.fxml"));
