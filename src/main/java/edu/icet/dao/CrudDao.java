@@ -9,5 +9,7 @@ public interface CrudDao<T> extends SuperDao{
 
     String getLast();
 
+    T getById(String id);
 
+    boolean update(T dao);
 }

@@ -19,4 +19,7 @@ public class SupplierEntity {
     private String email;
     private String address;
 
+    @ManyToOne
+    @JoinColumn(name = "userId",nullable = true)
+    private UserEntity user;
 }

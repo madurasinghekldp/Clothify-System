@@ -3,6 +3,8 @@ package edu.icet.bo;
 import edu.icet.dto.User;
 import edu.icet.entity.UserEntity;
 
+import java.util.List;
+
 public interface UserBo extends SuperBo{
 
     long getCount();
@@ -10,5 +12,9 @@ public interface UserBo extends SuperBo{
 
     boolean save(User dto);
 
-    UserEntity getuserEntity(String email);
+    User getUser(String email);
+
+    List<User> getAll();
+
+    User getById(String id);
 }

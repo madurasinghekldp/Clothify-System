@@ -1,8 +1,8 @@
 
 q
-java:S1121".Extract the assignment out of this expression.(Ùûé‘8§­ÒÄÿ1J$475fd41b-e7c3-42ca-83f8-7d45288f4744
+java:S1121".Extract the assignment out of this expression.(Ùûé‘8§­ÒÄÿ1J$93b1352b-1d13-49d3-ab41-44f6513760cc
 
-java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ÜŸ•8¨­ÒÄÿ1J$96a9cb81-104e-428b-b2d2-f774e7b06757
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ÜŸ•8¨­ÒÄÿ1J$4bfc62e5-7575-474c-b4d2-7677c8927944
 Ü
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ÄßÜê8­­ÒÄÿ1J$44f9ccf0-9ecc-4cea-9130-921b9ab8c8e3
-›	java:S131"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÜŸ•8¡Ó¹Æÿ1J$77470f8a-6f57-439b-849d-2886f249c48f
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ÄßÜê8­­ÒÄÿ1J$826bde37-1f49-45c7-b783-a151cef13f63
+›	java:S131"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÜŸ•8¡Ó¹Æÿ1J$f69c6e46-6174-4d0b-abf3-1e1ab861ecfb

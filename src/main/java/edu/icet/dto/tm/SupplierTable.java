@@ -1,20 +1,21 @@
-package edu.icet.dto;
+package edu.icet.dto.tm;
 
-import edu.icet.entity.ProductEntity;
+import edu.icet.dto.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.List;
+import lombok.ToString;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Supplier {
+public class SupplierTable {
+
     private String id;
     private String name;
     private String company;
     private String email;
     private String address;
-    private User user;
+    private String user;
+
 }

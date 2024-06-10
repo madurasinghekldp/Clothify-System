@@ -4,7 +4,7 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import edu.icet.bo.BoFactory;
 import edu.icet.bo.UserBo;
-import edu.icet.entity.UserEntity;
+import edu.icet.dto.User;
 import edu.icet.util.BoType;
 import edu.icet.util.Encryptor;
 import javafx.event.ActionEvent;
@@ -27,14 +27,15 @@ public class LoginFormController {
 
 
     public void btnLoginOnAction(ActionEvent actionEvent) {
-        UserEntity userEntity = userBo.getuserEntity(inputEmail.getText());
-        if(userEntity!=null){
-            if(new Encryptor().getEncryptedPassword(inputPassword.getText()).equals(userEntity.getPassword())){
+        User user = userBo.getUser(inputEmail.getText());
+        if(user!=null){
+            if(new Encryptor().getEncryptedPassword(inputPassword.getText()).equals(user.getPassword())){
                 try {
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/navigation-form.fxml"));
                     Scene scene = new Scene(loader.load());
                     NavigationFormController controller = loader.getController();
                     controller.setStage(stage);
+                    controller.setUser(user);
                     stage.setScene(scene);
                     stage.show();
                 } catch (IOException e) {

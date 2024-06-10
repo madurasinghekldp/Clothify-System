@@ -8,6 +8,9 @@ import edu.icet.entity.UserEntity;
 import edu.icet.util.DaoType;
 import org.modelmapper.ModelMapper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UserBoImpl implements UserBo {
 
     private UserDao userDao = DaoFactory.getInstance().getDao(DaoType.USER);
@@ -27,7 +30,30 @@ public class UserBoImpl implements UserBo {
     }
 
     @Override
-    public UserEntity getuserEntity(String email) {
-        return userDao.getUserEntity(email);
+    public User getUser(String email) {
+        UserEntity userEntity = userDao.getUserEntity(email);
+        if(userEntity!=null){
+            return new ModelMapper().map(userEntity,User.class);
+        }
+        return null;
+    }
+
+    @Override
+    public List<User> getAll() {
+        List<UserEntity> all = userDao.getAll();
+        List<User> users = new ArrayList<>();
+        for(UserEntity userEntity:all){
+            users.add(new ModelMapper().map(userEntity,User.class));
+        }
+        return users;
+    }
+
+    @Override
+    public User getById(String id) {
+        UserEntity userEntity = userDao.getById(id);
+        if(userEntity!=null){
+            return new ModelMapper().map(userEntity,User.class);
+        }
+        else return null;
     }
 }

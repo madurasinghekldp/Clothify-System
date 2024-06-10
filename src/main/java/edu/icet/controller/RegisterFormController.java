@@ -48,7 +48,7 @@ public class RegisterFormController implements Initializable {
                 .setDob(inputDOB.getValue())
                 .setAddress(inputAddress.getText())
                 .setType(UserType.USER);
-        if(userBo.getuserEntity(inputEmail.getText())!=null){
+        if(userBo.getUser(inputEmail.getText())!=null){
             new Alert(Alert.AlertType.ERROR,"User already exists").show();
         }
         else{
