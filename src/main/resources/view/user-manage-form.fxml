@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.DatePicker?>
@@ -49,7 +50,6 @@
                         <JFXTextField fx:id="inputId" focusColor="#da6969" layoutX="49.6" layoutY="19.0" prefHeight="26.0" prefWidth="148.0" promptText="Id" unFocusColor="#da6969" AnchorPane.leftAnchor="49.6" />
                         <JFXTextField fx:id="inputFirstName" focusColor="#da6969" layoutX="49.6" layoutY="87.0" prefHeight="26.0" prefWidth="148.0" promptText="First Name" unFocusColor="#da6969" AnchorPane.leftAnchor="49.6" AnchorPane.rightAnchor="156.00000000000003" />
                         <JFXTextField fx:id="inputEmail" focusColor="#da6969" layoutX="49.6" layoutY="301.0" prefHeight="26.0" prefWidth="148.0" promptText="Email" unFocusColor="#da6969" AnchorPane.leftAnchor="49.6" AnchorPane.rightAnchor="156.00000000000003" />
-                        <JFXTextField fx:id="inputType" focusColor="#da6969" layoutX="49.6" layoutY="250.0" prefHeight="26.0" prefWidth="148.0" promptText="Type" unFocusColor="#da6969" AnchorPane.leftAnchor="49.6" AnchorPane.rightAnchor="156.00000000000003" />
                         <JFXTextField fx:id="inputAddress" focusColor="#da6969" layoutX="49.6" layoutY="349.0" prefHeight="26.0" prefWidth="148.0" promptText="Address" unFocusColor="#da6969" AnchorPane.leftAnchor="49.6" AnchorPane.rightAnchor="156.00000000000003" />
                         <JFXButton layoutX="50.0" layoutY="420.0" onAction="#btnAddUserOnAction" prefHeight="38.0" prefWidth="51.0" style="-fx-background-color: DA6969;" text="Add" textFill="WHITE" AnchorPane.bottomAnchor="43.200000000000024" AnchorPane.leftAnchor="50.0">
                            <font>
@@ -74,6 +74,7 @@
                         <JFXTextField fx:id="inputLastName" focusColor="#da6969" layoutX="49.6" layoutY="136.0" prefHeight="26.0" prefWidth="148.0" promptText="Last Name" unFocusColor="#da6969" AnchorPane.leftAnchor="49.6" AnchorPane.rightAnchor="156.0" />
                         <DatePicker fx:id="inputDOB" layoutX="53.0" layoutY="202.0" prefHeight="26.0" prefWidth="148.0" promptText="Date Of Birth" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="152.8" />
                         <Separator layoutX="51.2" layoutY="63.0" prefHeight="11.0" prefWidth="278.0" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="21.0" />
+                        <JFXComboBox fx:id="inputType" layoutX="53.0" layoutY="251.0" prefHeight="26.0" prefWidth="144.0" promptText="User Type" />
                      </children>
                   </AnchorPane>
                   <AnchorPane prefHeight="432.0" prefWidth="445.0" GridPane.columnIndex="1">

@@ -65,8 +65,13 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public boolean update(UserEntity dao) {
-        return false;
+    public boolean update(UserEntity entity) {
+        Session session = HibernateUtil.getSession();
+        session.getTransaction().begin();
+        session.update(entity);
+        session.getTransaction().commit();
+        session.close();
+        return true;
     }
 
 

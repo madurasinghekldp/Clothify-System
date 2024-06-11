@@ -3,8 +3,6 @@ package edu.icet.controller;
 import com.jfoenix.controls.JFXTextField;
 import edu.icet.controller.user.UserBuilder;
 import edu.icet.dto.User;
-import edu.icet.util.OTPGenerator;
-import edu.icet.util.SendMailUtil;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -16,14 +14,14 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class VerifyEmailFormController implements Initializable {
+public class VerifyResetFormController implements Initializable {
     public JFXTextField digit1;
     public JFXTextField digit2;
     public JFXTextField digit3;
     public JFXTextField digit4;
     public JFXTextField digit5;
 
-    private UserBuilder builder;
+    private User user;
 
     private String otp;
 
@@ -33,20 +31,19 @@ public class VerifyEmailFormController implements Initializable {
         this.stage = stage;
     }
 
-    public void setBuilder(UserBuilder builder){
-        this.builder = builder;
-    }
-
     public void setOtp(String otp){
         this.otp = otp;
     }
 
+    public void setUser(User user){
+        this.user = user;
+    }
 
     public void btnGoBackOnAction(ActionEvent actionEvent) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/register-form.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/reset-password-form.fxml"));
             Scene scene = new Scene(loader.load());
-            RegisterFormController controller = loader.getController();
+            ResetPasswordFormController controller = loader.getController();
             controller.setStage(stage);
             stage.setScene(scene);
             stage.show();
@@ -58,11 +55,12 @@ public class VerifyEmailFormController implements Initializable {
     public void btnContinueOnAction(ActionEvent actionEvent) {
         if(otp.equals(digit1.getText()+digit2.getText()+digit3.getText()+digit4.getText()+digit5.getText())) {
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/final-register-form.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/final-password-change-form.fxml"));
                 Scene scene = new Scene(loader.load());
-                FinalRegisterFormController controller = loader.getController();
+                FinalPasswordChangeFormController controller = loader.getController();
                 controller.setStage(stage);
-                controller.setBuilder(builder);
+                controller.setOtp(otp);
+                controller.setUser(user);
                 stage.setScene(scene);
                 stage.show();
             } catch (IOException e) {
@@ -73,7 +71,6 @@ public class VerifyEmailFormController implements Initializable {
             new Alert(Alert.AlertType.ERROR,"OTP is not correct.").show();
         }
     }
-
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -111,6 +108,4 @@ public class VerifyEmailFormController implements Initializable {
             }
         });
     }
-
-
 }

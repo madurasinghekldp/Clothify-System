@@ -34,6 +34,7 @@ public class FinalRegisterFormController {
         this.builder = builder;
     }
 
+
     public void btnGoBackOnAction(ActionEvent actionEvent) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/verify-email-form.fxml"));

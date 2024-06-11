@@ -88,7 +88,7 @@ public class SupplierManageFormController implements Initializable {
 
     public void btnAddSupplierOnAction(ActionEvent actionEvent) {
         Supplier supplier = new Supplier(
-                generateUserId(),
+                SupplierController.getInstance().generateSupplierId(),
                 inputName.getText(),
                 inputCompany.getText(),
                 inputEmail.getText(),
@@ -111,7 +111,7 @@ public class SupplierManageFormController implements Initializable {
     public void btnDeleteSupplierOnAction(ActionEvent actionEvent) {
     }
 
-    private String generateUserId() {
+    private String generateSupplierId() {
         long count = supplierBo.getCount();
         System.out.println(count);
         if (count == 0) {

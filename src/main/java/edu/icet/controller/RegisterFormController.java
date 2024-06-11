@@ -53,7 +53,7 @@ public class RegisterFormController implements Initializable {
         }
         else{
             otp = new OTPGenerator().generateOTP();
-            new SendMailUtil(builder.getEmail(),otp).SendMail();
+            new SendMailUtil(builder.getEmail(),otp,"registration.").SendMail();
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/verify-email-form.fxml"));
                 Scene scene = new Scene(loader.load());

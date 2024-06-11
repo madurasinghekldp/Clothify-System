@@ -105,3 +105,11 @@ Bsrc/main/java/edu/icet/controller/supplier/SupplierController.java,2\6\264dd2c
 ,src/main/java/edu/icet/dto/tm/UserTable.java,1\a\1ad532f95c47cc41d16d21986f1746f81d012570
 j
 :src/main/java/edu/icet/controller/user/UserController.java,0\c\0c1f4cb1f73f41850c6fb10a4892d5beeb95978c
+p
+@src/main/java/edu/icet/controller/VerifyResetFormController.java,c\3\c3ec8acdae9778d74251babe2eeb6243e87181e1
+n
+>src/main/java/edu/icet/controller/FinalPasswordChangeForm.java,7\8\78161c910c22369883d5fc8ac4883c353e470ceb
+x
+Hsrc/main/java/edu/icet/controller/FinalPasswordChangeFormController.java,4\c\4c83b00ad1c3e231010b11d3cf3bd3ae9fab97c9
+\
+,src/main/java/edu/icet/util/IdGenerator.java,9\1\914092d097d45b731c549d6e82bb4041ed0d3ffc

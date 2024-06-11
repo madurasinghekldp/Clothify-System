@@ -1,5 +1,6 @@
 package edu.icet.controller.user;
 
+import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 import edu.icet.bo.BoFactory;
 import edu.icet.bo.UserBo;
@@ -7,6 +8,8 @@ import edu.icet.controller.NavigationFormController;
 import edu.icet.dto.User;
 import edu.icet.dto.tm.UserTable;
 import edu.icet.util.BoType;
+import edu.icet.util.Encryptor;
+import edu.icet.util.UserType;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -24,6 +27,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class UserManageFormController implements Initializable{
     public JFXTextField inputId;
@@ -31,7 +36,6 @@ public class UserManageFormController implements Initializable{
     public JFXTextField inputLastName;
     public DatePicker inputDOB;
     public JFXTextField inputAddress;
-    public JFXTextField inputType;
     public JFXTextField inputEmail;
     public TableView tblUser;
     public TableColumn colId;
@@ -41,6 +45,7 @@ public class UserManageFormController implements Initializable{
     public TableColumn colType;
     public TableColumn colEmail;
     public TableColumn colAddress;
+    public JFXComboBox inputType;
 
     private Stage stage;
 
@@ -71,7 +76,7 @@ public class UserManageFormController implements Initializable{
             inputFirstName.setText(user.getFirstName());
             inputLastName.setText(user.getLastName());
             inputDOB.setValue(user.getDob());
-            inputType.setText(user.getType().toString());
+            inputType.setValue(user.getType());
             inputEmail.setText(user.getEmail());
             inputAddress.setText(user.getAddress());
         }
@@ -82,7 +87,19 @@ public class UserManageFormController implements Initializable{
     }
 
     public void btnAddUserOnAction(ActionEvent actionEvent) {
-
+        User user = new User(
+                UserController.getInstance().generateUserId(),
+                inputFirstName.getText(),
+                inputLastName.getText(),
+                inputDOB.getValue(),
+                inputAddress.getText(),
+                UserType.USER,
+                inputEmail.getText(),
+                new Encryptor().getEncryptedPassword("x230y5d4h100ks8z")
+        );
+        boolean saved = userBo.save(user);
+        if(saved) new Alert(Alert.AlertType.INFORMATION,"New user saved..!");
+        loadUserTable();
     }
 
     public void btnUpdateUserOnAction(ActionEvent actionEvent) {
@@ -94,6 +111,7 @@ public class UserManageFormController implements Initializable{
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        ObservableList<UserType> userTypes = FXCollections.observableArrayList();
         colId.setCellValueFactory(new PropertyValueFactory<>("id"));
         colFirstName.setCellValueFactory(new PropertyValueFactory<>("firstName"));
         colLastName.setCellValueFactory(new PropertyValueFactory<>("lastName"));
@@ -103,6 +121,8 @@ public class UserManageFormController implements Initializable{
         colAddress.setCellValueFactory(new PropertyValueFactory<>("address"));
 
         loadUserTable();
+
+        inputType.setItems(userTypes);
     }
 
     private void loadUserTable() {
@@ -124,4 +144,6 @@ public class UserManageFormController implements Initializable{
         );
         tblUser.setItems(table);
     }
+
+
 }

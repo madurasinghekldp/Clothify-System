@@ -1,5 +1,7 @@
 
-P
-java:S1121".Extract the assignment out of this expression.(“Æİïıÿÿÿÿ8Éì»š€2
-¶
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(€÷Ôá8Íì»š€2
+v
+java:S1121".Extract the assignment out of this expression.(“Æİïıÿÿÿÿ8ˆÛÂ€2J$6a0b511e-6570-4227-a4a7-2419dd1ace13
+Ü
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(€÷Ôá8ÛÂ€2J$e299c80d-c5c2-4213-a7f0-e9f558f0423e
+r	java:S106!"+Replace this use of System.out by a logger.(³ğ¸ûÿÿÿÿ8ªåÂ€2J$f1899202-529a-4175-88da-f18f2fd7d71d
+r	java:S106+"+Replace this use of System.out by a logger.(·ùßóıÿÿÿÿ8¬åÂ€2J$8eeafe47-2d18-400d-88d7-db33989ed222

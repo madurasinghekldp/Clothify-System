@@ -1,7 +1,7 @@
 
-	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÓŸ¥8‰ù´éÿ1J$60a36803-71c9-47ac-ad21-8554bca18897
+	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÓŸ¥8ÍÄ²Â€2J$c80dfa1c-c03e-4491-b0e6-b8ac6bfb4f99
 º
-java:S5527"wEnable server hostname verification on this SSL/TLS connection, by setting "mail.smtp.ssl.checkserveridentity" to true.( Öˆ8ù´éÿ1J$964585d0-d8e0-4aef-9182-08a2083b45c3
+java:S5527"wEnable server hostname verification on this SSL/TLS connection, by setting "mail.smtp.ssl.checkserveridentity" to true.( Öˆ8ÒÄ²Â€2J$019f9c8e-bd56-4d6f-9178-17768ded8b33
 }
-java:S1161 ":Add the "@Override" annotation above this method signature(‡èú×8ù´éÿ1J$52a90573-057e-4daa-bc31-1ecfa95a927d
-l	java:S1064"+Replace this use of System.out by a logger.(Çğõ"8“ù´éÿ1J$2a5225aa-dc6e-47d9-92a1-4ef74dc747d8
+java:S1161#":Add the "@Override" annotation above this method signature(‡èú×8ÔÄ²Â€2J$96502c53-7497-4587-9444-920ff81ab660
+l	java:S1067"+Replace this use of System.out by a logger.(Çğõ"8ÛÄ²Â€2J$9318ed71-ab67-4b1b-ab17-e058990e5c54

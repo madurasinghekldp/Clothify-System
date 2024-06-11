@@ -17,4 +17,6 @@ public interface UserBo extends SuperBo{
     List<User> getAll();
 
     User getById(String id);
+
+    boolean update(User dto);
 }

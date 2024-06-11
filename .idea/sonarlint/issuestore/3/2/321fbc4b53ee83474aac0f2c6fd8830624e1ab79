@@ -1,7 +1,7 @@
 
 
-java:S1104"VMake inputEmail a static final constant or non-public and provide accessors if needed.(ÙøÍ±şÿÿÿÿ8ÌÖ¢‹ÿ1J$c2ad0cd9-ba2d-4687-bfd6-ab7cb151af41
-Ä
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(µÖğ8œ£‹ÿ1J$185ccabd-c9c5-4f87-9ab4-08855d0a1c78
+java:S1104"VMake inputEmail a static final constant or non-public and provide accessors if needed.(ÙøÍ±şÿÿÿÿ8¥Ïå¿€2J$46aa0e2d-9865-493f-83f1-7b541ecf9f83
+u
+java:S1172"2Remove this unused method parameter "actionEvent".(µÖğ8µÏå¿€2J$73607726-b4f1-44f5-bb1e-52e01d566dca
 t
-java:S1172"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8îİ²‹ÿ1J$2d615903-9cd7-4034-8b69-6c508d95a9a5
+java:S11721"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8ÈÏå¿€2J$138cc335-e16f-41ac-8f85-3163d563da15

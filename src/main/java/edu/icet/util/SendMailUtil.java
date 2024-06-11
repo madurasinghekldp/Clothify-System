@@ -12,9 +12,12 @@ public class SendMailUtil {
 
     private String otp;
 
-    public SendMailUtil(String tomail,String otp){
+    private String reason;
+
+    public SendMailUtil(String tomail,String otp,String reason){
         this.tomail = tomail;
         this.otp = otp;
+        this.reason = reason;
     }
     public void SendMail(){
         final String username = "madurasinghekldp@gmail.com";
@@ -44,7 +47,7 @@ public class SendMailUtil {
             );
             message.setSubject("Welcome to Clothify Store");
             message.setText("Hi,"
-                    + "\n\n Please use "+otp+" as OTP for registration."
+                    + "\n\n Please use "+otp+" as OTP for "+reason+""
                     + "\nThank you.");
 
             Transport.send(message);

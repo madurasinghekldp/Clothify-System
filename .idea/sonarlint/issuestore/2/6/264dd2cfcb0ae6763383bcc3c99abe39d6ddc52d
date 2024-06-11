@@ -1,5 +1,7 @@
 
 q
-java:S1121".Extract the assignment out of this expression.(ø„íþ8‘ ƒ’€2J$496afdf6-bd9f-4780-b4b7-8dfdece5e143
+java:S1121".Extract the assignment out of this expression.(ø„íþ8‘ ƒ’€2J$15332543-e8e8-4093-90a1-615fedebd127
 Ü
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ô­Ù”8– ƒ’€2J$04354480-9a7a-4fa7-9848-d44fd5319d69
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ô­Ù”8– ƒ’€2J$d4bb973b-cd74-48a8-b1c1-fa47fae56a4f
+r	java:S106!"+Replace this use of System.out by a logger.(Ž³ð¸ûÿÿÿÿ8Ëå¢Â€2J$61fc673b-e704-4721-8255-9cd6199f0e08
+r	java:S106+"+Replace this use of System.out by a logger.(·ùßóýÿÿÿÿ8Íå¢Â€2J$49f806f9-c319-4901-bc3f-f1b5dd0920d6

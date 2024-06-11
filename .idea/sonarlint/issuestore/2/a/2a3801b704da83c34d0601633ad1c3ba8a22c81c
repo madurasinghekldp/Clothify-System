@@ -1,11 +1,13 @@
 
 
-java:S1104"VMake inputEmail a static final constant or non-public and provide accessors if needed.(ÙøÍ±şÿÿÿÿ8’àãòÿ1J$fa3e17df-d58f-4b58-a4c2-58a1e73bcb2f
+java:S1104"VMake inputEmail a static final constant or non-public and provide accessors if needed.(ÙøÍ±şÿÿÿÿ8’àãòÿ1J$12896722-1574-41a0-bf38-2d76f6f4d074
 ¡
-java:S1104"YMake inputPassword a static final constant or non-public and provide accessors if needed.(ŸóÌÂúÿÿÿÿ8’àãòÿ1J$8cb74b1b-483d-4eb1-b469-2b38f3e9a692
+java:S1104"YMake inputPassword a static final constant or non-public and provide accessors if needed.(ŸóÌÂúÿÿÿÿ8’àãòÿ1J$43afc925-852e-4a76-84ab-afc14e8845eb
 z
-java:S1172"2Remove this unused method parameter "actionEvent".(Ùõášşÿÿÿÿ8±àãòÿ1J$04753329-4a74-4e70-9d59-eab369c99074
+java:S1172"2Remove this unused method parameter "actionEvent".(Ùõášşÿÿÿÿ8±àãòÿ1J$795b29e0-d7c1-4e08-b000-4bfec563652a
 z
-java:S11726"2Remove this unused method parameter "actionEvent".(Øê–Áøÿÿÿÿ8Ààãòÿ1J$fdf8ae19-f69f-4c4c-b3b0-0e1b1bb1fb4a
+java:S11726"2Remove this unused method parameter "actionEvent".(Øê–Áøÿÿÿÿ8Ààãòÿ1J$e61db6af-7254-421c-8615-75c844e95975
 t
-java:S1172C"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8Áàãòÿ1J$197e47be-a45c-43d0-be44-4813f30683f3
+java:S1172C"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8Áàãòÿ1J$24078f42-3fb4-4e19-9c5b-d346c927f273
+}
+java:S1128";Remove this unused import 'com.jfoenix.controls.JFXButton'.(„•£8‹ªÿ½€2J$343c9085-53b8-4445-aee0-8364bc1d0684

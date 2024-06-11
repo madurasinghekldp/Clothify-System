@@ -1,0 +1,11 @@
+
+¡
+java:S1104"YMake inputPassword a static final constant or non-public and provide accessors if needed.(ŸóÌÂúÿÿÿÿ8šçÊÀ€2J$aed92030-c0f0-4c7c-8b18-34ead75d6ba1
+•
+java:S1450"RRemove the "otp" field and declare it as a local variable in the relevant methods.(Ú­òµ8¦çÊÀ€2J$d159bdbb-eb4d-47b5-9ecf-70dc7f4344a2
+t
+java:S1172'"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8ªçÊÀ€2J$860a479f-13e0-4da8-bd53-4b74658687e7
+t
+java:S11726"2Remove this unused method parameter "actionEvent".(ïÁ Y8»çÊÀ€2J$1b8b4196-81b7-4ba5-a3af-cac5474c029f
+j
+java:S1068"'Remove this unused "otp" private field.(Ú­òµ8¾çÊÀ€2J$cfef084d-c6f1-445a-9345-589d75ecc7df
