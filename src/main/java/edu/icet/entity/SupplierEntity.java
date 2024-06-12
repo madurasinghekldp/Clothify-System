@@ -16,7 +16,10 @@ public class SupplierEntity {
     private String id;
     private String name;
     private String company;
+
+    @Column(nullable = false)
     private String email;
+
     private String address;
 
     @ManyToOne

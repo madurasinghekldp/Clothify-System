@@ -8,5 +8,5 @@ public interface UserDao extends CrudDao<UserEntity>{
 
     UserEntity getUserEntity(String email);
 
-    List<UserEntity> getAll();
+
 }

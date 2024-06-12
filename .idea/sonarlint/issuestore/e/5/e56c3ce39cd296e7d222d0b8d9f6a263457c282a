@@ -1,63 +1,69 @@
 
 r
-java:S3740'"/Provide the parametrized type for this generic.(ìÒÑŒ8Ô¨Â€2J$20886681-c7c4-4ed5-821d-57ba0dd25aa5
+java:S3740'"/Provide the parametrized type for this generic.(ìÒÑŒ8ÅƒÜê€2J$408d58c8-ad60-45c4-a78c-9cdcae33a21f
 r
-java:S3740("/Provide the parametrized type for this generic.(“ĞÃâ8Ô¨Â€2J$293cdb93-2f4f-457e-856f-21d731f76205
+java:S3740("/Provide the parametrized type for this generic.(“ĞÃâ8ÅƒÜê€2J$a3212de9-080d-47dd-a11c-660e3ed3ca88
 w
-java:S3740)"/Provide the parametrized type for this generic.(ÊÚÎ¨ùÿÿÿÿ8Ô¨Â€2J$43035642-991a-4a7e-bbfb-2e8e52435514
+java:S3740)"/Provide the parametrized type for this generic.(ÊÚÎ¨ùÿÿÿÿ8ÅƒÜê€2J$6070a85c-4cbb-41fd-8aab-4393552eeec1
 w
-java:S3740*"/Provide the parametrized type for this generic.(°Äˆ´ÿÿÿÿÿ8Ô¨Â€2J$e1f0c499-a7d2-491b-ab32-28fd725a98c2
+java:S3740*"/Provide the parametrized type for this generic.(°Äˆ´ÿÿÿÿÿ8ÅƒÜê€2J$ccb1a075-406d-4bd2-8cf6-5a0f9bb727b2
 r
-java:S3740+"/Provide the parametrized type for this generic.(ƒäÆ8Ô¨Â€2J$f7e763a2-8429-4758-846f-e609128de39b
+java:S3740+"/Provide the parametrized type for this generic.(ƒäÆ8ÅƒÜê€2J$8b22b45d-c811-4efe-b2b5-c4e53f87fe3d
 r
-java:S3740,"/Provide the parametrized type for this generic.(¯ÿı°8Ô¨Â€2J$745d61f7-a2e1-477a-a2fe-4c2d4d341958
+java:S3740,"/Provide the parametrized type for this generic.(¯ÿı°8ÅƒÜê€2J$d1b58a8d-bf9f-4847-8421-be133355adf9
 w
-java:S3740-"/Provide the parametrized type for this generic.(È’Ç·şÿÿÿÿ8Ô¨Â€2J$fa223c8b-a8ae-461c-899a-d7a64d561e22
+java:S3740-"/Provide the parametrized type for this generic.(È’Ç·şÿÿÿÿ8ÅƒÜê€2J$3af3ce8d-30d5-4c30-b687-aa98cfdd600d
 –
-java:S1104""SMake inputId a static final constant or non-public and provide accessors if needed.(¶İº¡8¡Ô¨Â€2J$33ceb2ce-16db-4706-94a8-c803aa31130a
+java:S1104""SMake inputId a static final constant or non-public and provide accessors if needed.(¶İº¡8ÈƒÜê€2J$9710a4a0-aab5-4065-a5f0-11d8ffa9ede3
 
-java:S1104#"UMake inputName a static final constant or non-public and provide accessors if needed.(ØÒÅøÿÿÿÿ8¡Ô¨Â€2J$1a85582e-c26e-481d-845e-302f076b231e
+java:S1104#"UMake inputName a static final constant or non-public and provide accessors if needed.(ØÒÅøÿÿÿÿ8ÈƒÜê€2J$e67d3572-b928-4845-9309-334bd8053c59
 
-java:S1104$"VMake inputEmail a static final constant or non-public and provide accessors if needed.(ÙøÍ±şÿÿÿÿ8¡Ô¨Â€2J$304433c4-9e7e-4d46-a6c0-1ffbc79ef4f1
+java:S1104$"VMake inputEmail a static final constant or non-public and provide accessors if needed.(ÙøÍ±şÿÿÿÿ8ÈƒÜê€2J$ce335c06-6e7b-40a1-8c5b-c314d8885714
  
-java:S1104%"XMake inputCompany a static final constant or non-public and provide accessors if needed.(³–†‰úÿÿÿÿ8¡Ô¨Â€2J$d7ab4486-8a18-40af-8e3e-da7822d7a6b7
+java:S1104%"XMake inputCompany a static final constant or non-public and provide accessors if needed.(³–†‰úÿÿÿÿ8ÈƒÜê€2J$7804a15f-c33f-4fb4-ad3c-9baa0d0eecf6
 ›
-java:S1104&"XMake inputAddress a static final constant or non-public and provide accessors if needed.(øŸ½ó8¡Ô¨Â€2J$2aad9b78-0323-4890-a1bb-c1240dc805e2
+java:S1104&"XMake inputAddress a static final constant or non-public and provide accessors if needed.(øŸ½ó8ÈƒÜê€2J$a874a4e3-915f-4107-9a63-ec0bdfcc27a4
 š
-java:S1104'"WMake tblSupplier a static final constant or non-public and provide accessors if needed.(ìÒÑŒ8¡Ô¨Â€2J$42c12256-442a-432c-943d-154905e9231c
+java:S1104'"WMake tblSupplier a static final constant or non-public and provide accessors if needed.(ìÒÑŒ8ÈƒÜê€2J$757c0613-d7d2-4851-bbf0-d74ca98f9ff5
 ”
-java:S1104("QMake colId a static final constant or non-public and provide accessors if needed.(“ĞÃâ8¡Ô¨Â€2J$c68233e7-638b-4163-8423-50e22ec559ad
+java:S1104("QMake colId a static final constant or non-public and provide accessors if needed.(“ĞÃâ8ÈƒÜê€2J$6cda08af-c6af-4578-a988-3ccfe7ddf68f
 ›
-java:S1104)"SMake colName a static final constant or non-public and provide accessors if needed.(ÊÚÎ¨ùÿÿÿÿ8¡Ô¨Â€2J$9af782de-d93e-4697-888e-d8ecab298ddb
+java:S1104)"SMake colName a static final constant or non-public and provide accessors if needed.(ÊÚÎ¨ùÿÿÿÿ8ÈƒÜê€2J$1302a65a-c58b-4367-ba45-de6a0fd81ea7
 
-java:S1104*"VMake colCompany a static final constant or non-public and provide accessors if needed.(°Äˆ´ÿÿÿÿÿ8¡Ô¨Â€2J$060308db-1963-47b2-ae01-f8eda4c42c74
+java:S1104*"VMake colCompany a static final constant or non-public and provide accessors if needed.(°Äˆ´ÿÿÿÿÿ8ÈƒÜê€2J$a424c517-de9d-4c8e-8fc4-d772f836ad9e
 —
-java:S1104+"TMake colEmail a static final constant or non-public and provide accessors if needed.(ƒäÆ8¡Ô¨Â€2J$cc925740-d55d-4a35-91b9-5622e1731c2c
+java:S1104+"TMake colEmail a static final constant or non-public and provide accessors if needed.(ƒäÆ8ÈƒÜê€2J$130bad27-34a0-4419-b15f-33728cceaeb3
 ™
-java:S1104,"VMake colAddress a static final constant or non-public and provide accessors if needed.(¯ÿı°8¡Ô¨Â€2J$d8af814b-8228-4506-a2f0-587602672049
+java:S1104,"VMake colAddress a static final constant or non-public and provide accessors if needed.(¯ÿı°8ÈƒÜê€2J$61389607-7490-4526-b09b-bcde9f9324f6
 
-java:S1104-"VMake colCreator a static final constant or non-public and provide accessors if needed.(È’Ç·şÿÿÿÿ8¡Ô¨Â€2J$4edb27b0-357f-4e23-8bee-ce3e999c8199
+java:S1104-"VMake colCreator a static final constant or non-public and provide accessors if needed.(È’Ç·şÿÿÿÿ8ÈƒÜê€2J$e685ae7f-6f79-4341-9e42-6237d9efb50b
 Ä
-java:S1186o"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(úşÎ½8ÇÔ¨Â€2J$66ba3a61-bc39-4fef-a83a-c59f8622ae95
+java:S1186p"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(úşÎ½8íƒÜê€2J$1747b6bb-24a9-4aa8-ac99-349f1156f5fe
 t
-java:S1172?"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8ÌÔ¨Â€2J$8a6e4d70-dc9f-45fa-af08-84a244ee524a
+java:S1172?"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8ñƒÜê€2J$d478361f-c87e-47ef-a633-1b6a59e5cfa7
 z
-java:S1172L"2Remove this unused method parameter "actionEvent".(úË»‚ùÿÿÿÿ8ÚÔ¨Â€2J$9c58b3ef-b2f3-4a09-bd8a-e2e77c525ee4
+java:S1172M"2Remove this unused method parameter "actionEvent".(úË»‚ùÿÿÿÿ8ÿƒÜê€2J$76e7952b-deb4-471d-b827-b46ed4e73126
 x
-java:S1854b"5Remove this useless assignment to local variable "b".(‡ñ¹8İÔ¨Â€2J$7919b7e6-2d2d-45d4-9df3-602c0ddcde5e
+java:S1854c"5Remove this useless assignment to local variable "b".(‡ñ¹8‚„Üê€2J$3bc50b68-79b0-4c09-8a4e-8674f32c2a65
 u
-java:S1172Y"2Remove this unused method parameter "actionEvent".(Õ’Ä½8İÔ¨Â€2J$60f00be5-bacd-4006-82d0-67183bf480c6
-„
-java:S1117Z"<Rename "supplier" which hides the field declared at line 51.(¯æ“Æúÿÿÿÿ8ŞÔ¨Â€2J$4b90e982-ce12-455c-bd40-9f9cf8db3afe
+java:S1172Z"2Remove this unused method parameter "actionEvent".(Õ’Ä½8ƒ„Üê€2J$d6880dc3-fcc1-4115-b273-3f3e503360ff
 i
-java:S1481b"&Remove this unused "b" local variable.(‡ñ¹8ßÔ¨Â€2J$c08966dc-d213-4459-b41c-bdf5113089d3
+java:S1481c"&Remove this unused "b" local variable.(‡ñ¹8„„Üê€2J$9401dc9a-7051-44e0-a373-1ea70d492936
 x
-java:S1854k"5Remove this useless assignment to local variable "b".(ŒÉîĞ8àÔ¨Â€2J$19eee378-9e22-458d-b289-05cfb5041f3a
+java:S1854l"5Remove this useless assignment to local variable "b".(ŒÉîĞ8…„Üê€2J$a97de32f-8e5e-4311-a70a-ef5a401ab6e0
 t
-java:S1172f"2Remove this unused method parameter "actionEvent".(¹¤8àÔ¨Â€2J$48e2f801-5ba8-4943-8f4c-b583f83b76bd
+java:S1172g"2Remove this unused method parameter "actionEvent".(¹¤8…„Üê€2J$9daf774a-785a-43f9-be20-7dd94305a696
 i
-java:S1481k"&Remove this unused "b" local variable.(ŒÉîĞ8áÔ¨Â€2J$15e352db-521e-47b9-94f3-f18ec797fadc
-r	java:S106t"+Replace this use of System.out by a logger.(³ğ¸ûÿÿÿÿ8âÔ¨Â€2J$78f8b7c2-5b60-4b51-86d1-abd2ffc765db
-r	java:S106~"+Replace this use of System.out by a logger.(·ùßóıÿÿÿÿ8äÔ¨Â€2J$85036519-5342-496e-8d04-46a92ad3343f
+java:S1481l"&Remove this unused "b" local variable.(ŒÉîĞ8†„Üê€2J$11825dd1-83e4-42b3-9d04-68686d26e8c6
 €
-java:S1117–"<Rename "supplier" which hides the field declared at line 51.(ƒş©Á8èÔ¨Â€2J$75828898-1951-4d12-bb85-87faed6b5d63
+java:S1117„"<Rename "supplier" which hides the field declared at line 51.(ƒş©Á8‹„Üê€2J$d6d429e1-adcb-4009-a2c8-8f83b8b40127
+Œ
+java:S1128"DRemove this unused import 'edu.icet.controller.LoginFormController'.(‰×Ş×şÿÿÿÿ8„Üê€2J$cbe7a1d2-9711-4f01-ae1b-739b2ef9f690
+~
+java:S1128";Remove this unused import 'edu.icet.entity.SupplierEntity'.(ğ®òÓ8„Üê€2J$dca76526-fa73-4108-8152-81a0b82f43ab
+€
+java:S1128"8Remove this unused import 'org.modelmapper.ModelMapper'.(ó¿Ôúÿÿÿÿ8„Üê€2J$5d44c760-7a08-4a5f-bd92-0bd907d2bf08
+w
+java:S1128"4Remove this unused import 'java.util.regex.Matcher'.(ëÅ›ã8„Üê€2J$c56069ff-cf7e-4df8-bb20-34794028405d
+|
+java:S1128"4Remove this unused import 'java.util.regex.Pattern'.(Ã•…Äúÿÿÿÿ8„Üê€2J$2d116111-84ad-495d-ae24-960ec5d0afe5

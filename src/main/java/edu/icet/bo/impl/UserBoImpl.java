@@ -61,4 +61,9 @@ public class UserBoImpl implements UserBo {
     public boolean update(User dto) {
         return userDao.update(new ModelMapper().map(dto,UserEntity.class));
     }
+
+    @Override
+    public boolean delete(User dto) {
+        return userDao.delete(new ModelMapper().map(dto,UserEntity.class));
+    }
 }

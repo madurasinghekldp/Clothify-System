@@ -1,7 +1,7 @@
 
 q
-java:S1121".Extract the assignment out of this expression.(ø„íþ8‘ ƒ’€2J$15332543-e8e8-4093-90a1-615fedebd127
+java:S1121".Extract the assignment out of this expression.(ø„íþ8‘ ƒ’€2J$612be63c-d63e-4570-836e-4d67611bf498
 Ü
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ô­Ù”8– ƒ’€2J$d4bb973b-cd74-48a8-b1c1-fa47fae56a4f
-r	java:S106!"+Replace this use of System.out by a logger.(Ž³ð¸ûÿÿÿÿ8Ëå¢Â€2J$61fc673b-e704-4721-8255-9cd6199f0e08
-r	java:S106+"+Replace this use of System.out by a logger.(·ùßóýÿÿÿÿ8Íå¢Â€2J$49f806f9-c319-4901-bc3f-f1b5dd0920d6
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ô­Ù”8– ƒ’€2J$d285e4b2-a1a4-453c-bcdf-45c0609bac7b
+r	java:S106!"+Replace this use of System.out by a logger.(Ž³ð¸ûÿÿÿÿ8Ëå¢Â€2J$550ab3a6-cd82-4e4d-9ee0-6ba93f3ebf18
+r	java:S106+"+Replace this use of System.out by a logger.(·ùßóýÿÿÿÿ8Íå¢Â€2J$5a639c70-133e-4319-95fb-9e3eebfcce2c

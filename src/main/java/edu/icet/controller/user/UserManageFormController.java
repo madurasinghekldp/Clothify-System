@@ -51,10 +51,16 @@ public class UserManageFormController implements Initializable{
 
     private User user;
 
+    private User opUser=null;
+
     private UserBo userBo = BoFactory.getInstance().getBo(BoType.USER);
 
     public void setStage(Stage stage) {
         this.stage = stage;
+    }
+
+    public void setUser(User user){
+        this.user = user;
     }
 
     public void btnGoBackOnAction(ActionEvent actionEvent) {
@@ -63,6 +69,7 @@ public class UserManageFormController implements Initializable{
             Scene scene = new Scene(loader.load());
             NavigationFormController controller = loader.getController();
             controller.setStage(stage);
+            controller.setUser(user);
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
@@ -71,14 +78,14 @@ public class UserManageFormController implements Initializable{
     }
 
     public void btnSearchUserOnAction(ActionEvent actionEvent) {
-        user = UserController.getInstance().searchUser(inputId.getText());
-        if(user!=null){
-            inputFirstName.setText(user.getFirstName());
-            inputLastName.setText(user.getLastName());
-            inputDOB.setValue(user.getDob());
-            inputType.setValue(user.getType());
-            inputEmail.setText(user.getEmail());
-            inputAddress.setText(user.getAddress());
+        opUser = UserController.getInstance().searchUser(inputId.getText());
+        if(opUser!=null){
+            inputFirstName.setText(opUser.getFirstName());
+            inputLastName.setText(opUser.getLastName());
+            inputDOB.setValue(opUser.getDob());
+            inputType.setValue(opUser.getType());
+            inputEmail.setText(opUser.getEmail());
+            inputAddress.setText(opUser.getAddress());
         }
         else{
             new Alert(Alert.AlertType.WARNING,"No such user..!").show();
@@ -87,31 +94,57 @@ public class UserManageFormController implements Initializable{
     }
 
     public void btnAddUserOnAction(ActionEvent actionEvent) {
-        User user = new User(
+        opUser = new User(
                 UserController.getInstance().generateUserId(),
                 inputFirstName.getText(),
                 inputLastName.getText(),
                 inputDOB.getValue(),
                 inputAddress.getText(),
-                UserType.USER,
+                (UserType)(inputType.getValue()),
                 inputEmail.getText(),
                 new Encryptor().getEncryptedPassword("x230y5d4h100ks8z")
         );
-        boolean saved = userBo.save(user);
-        if(saved) new Alert(Alert.AlertType.INFORMATION,"New user saved..!");
-        loadUserTable();
+        if(userBo.getUser(inputEmail.getText())!=null){
+            new Alert(Alert.AlertType.WARNING,"User already exists..!").show();
+        }
+        else{
+            boolean saved = userBo.save(opUser);
+            if(saved) new Alert(Alert.AlertType.INFORMATION,"New user saved..!").show();
+            loadUserTable();
+        }
+
     }
 
     public void btnUpdateUserOnAction(ActionEvent actionEvent) {
+        if(opUser!=null){
+            opUser.setFirstName(inputFirstName.getText());
+            opUser.setLastName(inputLastName.getText());
+            opUser.setDob(inputDOB.getValue());
+            opUser.setType((UserType) inputType.getValue());
+            opUser.setAddress(inputAddress.getText());
+
+            boolean updated = userBo.update(opUser);
+            if(updated) new Alert(Alert.AlertType.INFORMATION,"User updated..!").show();
+            loadUserTable();
+        }
     }
 
     public void btnDeleteUserOnAction(ActionEvent actionEvent) {
+        if(opUser!=null){
+            boolean deleted = userBo.delete(opUser);
+            if(deleted) {
+                new Alert(Alert.AlertType.INFORMATION,"User deleted..!").show();
+            }
+            else{
+                new Alert(Alert.AlertType.WARNING,"User can not be deleted..!").show();
+            }
+            loadUserTable();
+        }
     }
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        ObservableList<UserType> userTypes = FXCollections.observableArrayList();
         colId.setCellValueFactory(new PropertyValueFactory<>("id"));
         colFirstName.setCellValueFactory(new PropertyValueFactory<>("firstName"));
         colLastName.setCellValueFactory(new PropertyValueFactory<>("lastName"));
@@ -122,7 +155,14 @@ public class UserManageFormController implements Initializable{
 
         loadUserTable();
 
-        inputType.setItems(userTypes);
+        loadUserTypes();
+    }
+
+    private void loadUserTypes() {
+        ObservableList<Object> types = FXCollections.observableArrayList();
+        types.add(UserType.USER);
+        types.add(UserType.ADMIN);
+        inputType.setItems(types);
     }
 
     private void loadUserTable() {
@@ -144,6 +184,5 @@ public class UserManageFormController implements Initializable{
         );
         tblUser.setItems(table);
     }
-
 
 }

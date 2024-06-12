@@ -1,3 +1,73 @@
 
-…
-java:S2094"BRemove this empty class, write its code or make it an "interface".(›†πΨ8ÿ¥ΐ–ÿ1J$5782b184-c67e-4953-b738-711e4264a956
+L
+java:S3740'"/Provide the parametrized type for this generic.(ªΗυ8Ήκμ€2
+Q
+java:S3740("/Provide the parametrized type for this generic.(ρΪ³•ϋÿÿÿÿ8Ίκμ€2
+Q
+java:S3740)"/Provide the parametrized type for this generic.(―©„ϊÿÿÿÿ8Ίκμ€2
+L
+java:S3740*"/Provide the parametrized type for this generic.(“ΠΓβ8Ίκμ€2
+Q
+java:S3740+"/Provide the parametrized type for this generic.(ΚΪΞ¨ωÿÿÿÿ8Ίκμ€2
+L
+java:S3740,"/Provide the parametrized type for this generic.(«–Κ8Ίκμ€2
+L
+java:S3740-"/Provide the parametrized type for this generic.(Ζ¦κ8Ίκμ€2
+Q
+java:S3740."/Provide the parametrized type for this generic.(ύΰέΛώÿÿÿÿ8Ίκμ€2
+Q
+java:S3740/"/Provide the parametrized type for this generic.(·§έρόÿÿÿÿ8Ίκμ€2
+L
+java:S37400"/Provide the parametrized type for this generic.(΄ς«8Ίκμ€2
+p
+java:S1104""SMake inputId a static final constant or non-public and provide accessors if needed.(¶έΊ΅8Όκμ€2
+w
+java:S1104#"UMake inputName a static final constant or non-public and provide accessors if needed.(ΨÒΕψÿÿÿÿ8Όκμ€2
+r
+java:S1104$"UMake inputSize a static final constant or non-public and provide accessors if needed.(έςΚ—8Όκμ€2
+x
+java:S1104%"VMake inputPrice a static final constant or non-public and provide accessors if needed.(νΟ’έÿÿÿÿÿ8Όκμ€2
+u
+java:S1104&"YMake inputQuantity a static final constant or non-public and provide accessors if needed.(οΥ
+8Όκμ€2
+v
+java:S1104'"YMake inputCategory a static final constant or non-public and provide accessors if needed.(ªΗυ8Όκμ€2
+{
+java:S1104("YMake inputSupplier a static final constant or non-public and provide accessors if needed.(ρΪ³•ϋÿÿÿÿ8Όκμ€2
+x
+java:S1104)"VMake tblProduct a static final constant or non-public and provide accessors if needed.(―©„ϊÿÿÿÿ8Όκμ€2
+n
+java:S1104*"QMake colId a static final constant or non-public and provide accessors if needed.(“ΠΓβ8Όκμ€2
+u
+java:S1104+"SMake colName a static final constant or non-public and provide accessors if needed.(ΚΪΞ¨ωÿÿÿÿ8Όκμ€2
+p
+java:S1104,"SMake colSize a static final constant or non-public and provide accessors if needed.(«–Κ8Όκμ€2
+q
+java:S1104-"TMake colPrice a static final constant or non-public and provide accessors if needed.(Ζ¦κ8Όκμ€2
+y
+java:S1104."WMake colQuantity a static final constant or non-public and provide accessors if needed.(ύΰέΛώÿÿÿÿ8Όκμ€2
+y
+java:S1104/"WMake colCategory a static final constant or non-public and provide accessors if needed.(·§έρόÿÿÿÿ8Όκμ€2
+t
+java:S11040"WMake colSupplier a static final constant or non-public and provide accessors if needed.(΄ς«8Όκμ€2
+£
+java:S1186a"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(­‘–ϋÿÿÿÿ8κκμ€2
+£
+java:S1186d"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(”ζΊπωÿÿÿÿ8κκμ€2
+
+java:S1186g"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(α‹ι†8κκμ€2
+x
+java:S14506"VRemove the "product" field and declare it as a local variable in the relevant methods.(„Ό”Ϊωÿÿÿÿ8μκμ€2
+N
+java:S1172D"2Remove this unused method parameter "actionEvent".(ÿ¬Ϊw8οκμ€2
+W
+java:S1854]"5Remove this useless assignment to local variable "b".(±¶Ωόÿÿÿÿ8ϊκμ€2
+O
+java:S1172R"2Remove this unused method parameter "actionEvent".(Λτϋγ8ϊκμ€2
+L	java:S106\"+Replace this use of System.out by a logger.(Ψ¦ήϊÿÿÿÿ8ϋκμ€2
+H
+java:S1481]"&Remove this unused "b" local variable.(±¶Ωόÿÿÿÿ8όκμ€2
+I
+java:S1602}",Remove useless curly braces around statement(ƒώ©Α8ÿκμ€2
+Y
+java:S1117";Rename "product" which hides the field declared at line 54.(¤Έω©8κμ€2

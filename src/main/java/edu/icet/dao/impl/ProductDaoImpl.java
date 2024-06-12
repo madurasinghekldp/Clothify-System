@@ -1,8 +1,8 @@
 package edu.icet.dao.impl;
 
-import edu.icet.dao.SupplierDao;
+import edu.icet.dao.ProductDao;
+import edu.icet.entity.ProductEntity;
 import edu.icet.entity.SupplierEntity;
-import edu.icet.entity.UserEntity;
 import edu.icet.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -10,9 +10,9 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class SupplierDaoImpl implements SupplierDao {
+public class ProductDaoImpl implements ProductDao {
     @Override
-    public boolean save(SupplierEntity entity) {
+    public boolean save(ProductEntity entity) {
         Session session = HibernateUtil.getSession();
         session.getTransaction().begin();
         session.persist(entity);
@@ -25,7 +25,7 @@ public class SupplierDaoImpl implements SupplierDao {
     public long getCount() {
         Session session = HibernateUtil.getSession();
         session.getTransaction().begin();
-        long count = (long) session.createQuery("SELECT COUNT(s) FROM SupplierEntity s").uniqueResult();
+        long count = (long) session.createQuery("SELECT COUNT(p) FROM ProductEntity p").uniqueResult();
         session.getTransaction().commit();
         session.close();
         return count;
@@ -35,23 +35,23 @@ public class SupplierDaoImpl implements SupplierDao {
     public String getLast() {
         Session session = HibernateUtil.getSession();
         session.getTransaction().begin();
-        String last = (String) session.createQuery("SELECT s.id FROM SupplierEntity s ORDER BY s.id DESC").setMaxResults(1).uniqueResult();
+        String last = (String) session.createQuery("SELECT p.id FROM ProductEntity p ORDER BY p.id DESC").setMaxResults(1).uniqueResult();
         session.getTransaction().commit();
         session.close();
         return last;
     }
 
     @Override
-    public SupplierEntity getById(String id) {
+    public ProductEntity getById(String id) {
         Session session = HibernateUtil.getSession();
         Transaction transaction = null;
-        SupplierEntity supplier = null;
+        ProductEntity product = null;
 
         try {
             transaction = session.beginTransaction();
-            Query<SupplierEntity> query = session.createQuery("FROM SupplierEntity s WHERE s.id = :id", SupplierEntity.class);
+            Query<ProductEntity> query = session.createQuery("FROM ProductEntity p WHERE p.id = :id", ProductEntity.class);
             query.setParameter("id", id);
-            supplier = query.setMaxResults(1).uniqueResult();
+            product = query.setMaxResults(1).uniqueResult();
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) {
@@ -61,11 +61,11 @@ public class SupplierDaoImpl implements SupplierDao {
         } finally {
             session.close();
         }
-        return supplier;
+        return product;
     }
 
     @Override
-    public boolean update(SupplierEntity entity) {
+    public boolean update(ProductEntity entity) {
         Session session = HibernateUtil.getSession();
         session.getTransaction().begin();
         session.update(entity);
@@ -74,20 +74,19 @@ public class SupplierDaoImpl implements SupplierDao {
         return true;
     }
 
-
     @Override
-    public List<SupplierEntity> getAll() {
+    public List<ProductEntity> getAll() {
         Session session = HibernateUtil.getSession();
         session.getTransaction().begin();
-        Query<SupplierEntity> query = session.createQuery("FROM SupplierEntity",SupplierEntity.class);
-        List<SupplierEntity> supplierList = query.getResultList();
+        Query<ProductEntity> query = session.createQuery("FROM ProductEntity",ProductEntity.class);
+        List<ProductEntity> productList = query.getResultList();
         session.getTransaction().commit();
         session.close();
-        return supplierList;
+        return productList;
     }
 
     @Override
-    public boolean delete(SupplierEntity entity) {
+    public boolean delete(ProductEntity entity) {
         Session session = HibernateUtil.getSession();
         session.getTransaction().begin();
         session.remove(entity);

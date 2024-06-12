@@ -66,6 +66,7 @@ public class SupplierManageFormController implements Initializable {
             Scene scene = new Scene(loader.load());
             NavigationFormController controller = loader.getController();
             controller.setStage(stage);
+            controller.setUser(user);
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
@@ -87,7 +88,7 @@ public class SupplierManageFormController implements Initializable {
     }
 
     public void btnAddSupplierOnAction(ActionEvent actionEvent) {
-        Supplier supplier = new Supplier(
+        supplier = new Supplier(
                 SupplierController.getInstance().generateSupplierId(),
                 inputName.getText(),
                 inputCompany.getText(),
@@ -111,25 +112,6 @@ public class SupplierManageFormController implements Initializable {
     public void btnDeleteSupplierOnAction(ActionEvent actionEvent) {
     }
 
-    private String generateSupplierId() {
-        long count = supplierBo.getCount();
-        System.out.println(count);
-        if (count == 0) {
-            return "S001";
-        }
-        String last = supplierBo.getLast();
-        Pattern pattern = Pattern.compile("[A-Za-z](\\d+)");
-        Matcher matcher = pattern.matcher(last);
-        if (matcher.find()) {
-            int number = Integer.parseInt(matcher.group(1));
-            number++;
-            System.out.println(number);
-            return String.format("S%03d", number);
-        } else {
-            new Alert(Alert.AlertType.WARNING,"hello").show();
-        }
-        return null;
-    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

@@ -108,4 +108,19 @@ public class UserDaoImpl implements UserDao {
         session.close();
         return userList;
     }
+
+    @Override
+    public boolean delete(UserEntity entity) {
+        try{
+            Session session = HibernateUtil.getSession();
+            session.getTransaction().begin();
+            session.remove(entity);
+            session.getTransaction().commit();
+            session.close();
+            return true;
+        }
+        catch(Exception e){
+            return false;
+        }
+    }
 }

@@ -23,6 +23,7 @@ public class UserEntity {
     @Enumerated(EnumType.STRING)
     private UserType type;
 
+    @Column(nullable = false)
     private String email;
     private String password;
 }

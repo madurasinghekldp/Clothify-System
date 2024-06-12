@@ -1,9 +1,9 @@
 
-v
-java:S1874"3Remove this use of "createQuery"; it is deprecated.(š‚ÙŒ8ÙâÄÿ1J$8c5cb93d-a2c8-48cd-8bcb-254be123a24c
-v
-java:S1874&"3Remove this use of "createQuery"; it is deprecated.(Öôæ×8ÕéŞÅÿ1J$d9ccc076-f46a-48c2-a655-82d9c5754c9d
-v
-java:S1874G".Remove this use of "update"; it is deprecated.(¥·òÂøÿÿÿÿ8˜ÅÁ¾€2J$b046154c-ccac-446f-83ca-28e58a21828a
+P
+java:S1874"3Remove this use of "createQuery"; it is deprecated.(š‚ÙŒ8÷…îí€2
+P
+java:S1874&"3Remove this use of "createQuery"; it is deprecated.(Öôæ×8ø…îí€2
+P
+java:S1874G".Remove this use of "update"; it is deprecated.(¥·òÂøÿÿÿÿ8ú…îí€2
 X
-java:S1128";Remove this unused import 'edu.icet.entity.SupplierEntity'.(ğ®òÓ8ŸîÁ¾€2
+java:S1128";Remove this unused import 'edu.icet.entity.SupplierEntity'.(ğ®òÓ8ÿ…îí€2
