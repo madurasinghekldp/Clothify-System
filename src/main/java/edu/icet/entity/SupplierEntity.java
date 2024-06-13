@@ -23,6 +23,6 @@ public class SupplierEntity {
     private String address;
 
     @ManyToOne
-    @JoinColumn(name = "userId",nullable = true)
+    @JoinColumn(name = "userId",nullable = false)
     private UserEntity user;
 }

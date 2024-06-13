@@ -15,4 +15,6 @@ public interface ProductBo extends SuperBo{
     Product getById(String id);
 
     boolean update(Product dto);
+
+    boolean delete(Product dto);
 }

@@ -55,4 +55,9 @@ public class SupplierBoImpl implements SupplierBo {
         return supplierDao.update(new ModelMapper().map(dto,SupplierEntity.class));
     }
 
+    @Override
+    public boolean delete(Supplier dto) {
+        return supplierDao.delete(new ModelMapper().map(dto,SupplierEntity.class));
+    }
+
 }

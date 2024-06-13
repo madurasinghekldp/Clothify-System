@@ -20,6 +20,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -89,18 +90,54 @@ public class ProductManageFormController implements Initializable {
                 SupplierController.getInstance().searchSupplier(inputSupplier.getValue().toString()),
                 (Category) inputCategory.getValue()
         );
-        System.out.println(product);
         boolean b = productBo.save(product);
+        if(b) {
+            new Alert(Alert.AlertType.INFORMATION,"Product Added..!").show();
+        }
         loadProductTable();
     }
 
     public void btnSearchUserOnAction(ActionEvent actionEvent) {
+        product = ProductController.getInstance().searchProduct(inputId.getText());
+        if(product!=null){
+            inputName.setText(product.getName());
+            inputSize.setText(String.valueOf(product.getSize()));
+            inputPrice.setText(String.valueOf(product.getPrice()));
+            inputQuantity.setText(String.valueOf(product.getQty()));
+            inputCategory.setValue(product.getCategory());
+            inputSupplier.setValue(product.getSupplier().getId());
+        }
+        else{
+            new Alert(Alert.AlertType.WARNING,"No such product..!").show();
+        }
     }
 
     public void btnUpdateProductOnAction(ActionEvent actionEvent) {
+        if(product!=null){
+            product.setName(inputName.getText());
+            product.setSize(Integer.valueOf(inputSize.getText()));
+            product.setPrice(Double.valueOf(inputPrice.getText()));
+            product.setQty(Integer.valueOf(inputQuantity.getText()));
+            product.setCategory((Category) inputCategory.getValue());
+            product.setSupplier(SupplierController.getInstance().searchSupplier(inputSupplier.getId()));
+            boolean b = productBo.update(product);
+            if(b) {
+                new Alert(Alert.AlertType.INFORMATION,"Product updated..!").show();
+            }
+            loadProductTable();
+        }
     }
 
     public void btnDeleteProductOnAction(ActionEvent actionEvent) {
+        if(product!=null){
+            boolean deleted = productBo.delete(product);
+            if(deleted) {
+                new Alert(Alert.AlertType.INFORMATION,"Product deleted..!").show();
+            }
+            else{
+                new Alert(Alert.AlertType.WARNING,"Product can not be deleted..!").show();
+            }
+        }
     }
 
     @Override

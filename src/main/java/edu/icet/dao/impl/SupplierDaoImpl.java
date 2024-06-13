@@ -88,11 +88,16 @@ public class SupplierDaoImpl implements SupplierDao {
 
     @Override
     public boolean delete(SupplierEntity entity) {
-        Session session = HibernateUtil.getSession();
-        session.getTransaction().begin();
-        session.remove(entity);
-        session.getTransaction().commit();
-        session.close();
-        return true;
+        try{
+            Session session = HibernateUtil.getSession();
+            session.getTransaction().begin();
+            session.remove(entity);
+            session.getTransaction().commit();
+            session.close();
+            return true;
+        }
+        catch(Exception e){
+            return false;
+        }
     }
 }

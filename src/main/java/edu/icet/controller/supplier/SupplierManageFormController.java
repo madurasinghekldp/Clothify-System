@@ -97,19 +97,36 @@ public class SupplierManageFormController implements Initializable {
                 user
         );
         boolean b = supplierBo.save(supplier);
+        if(b) {
+            new Alert(Alert.AlertType.INFORMATION,"Supplier Added..!").show();
+        }
         loadSupplierTable();
     }
 
     public void btnUpdateSupplierOnAction(ActionEvent actionEvent) {
-        supplier.setName(inputName.getText());
-        supplier.setEmail(inputEmail.getText());
-        supplier.setCompany(inputCompany.getText());
-        supplier.setAddress(inputAddress.getText());
-        boolean b = supplierBo.update(supplier);
-        loadSupplierTable();
+        if(supplier!=null){
+            supplier.setName(inputName.getText());
+            supplier.setEmail(inputEmail.getText());
+            supplier.setCompany(inputCompany.getText());
+            supplier.setAddress(inputAddress.getText());
+            boolean b = supplierBo.update(supplier);
+            if(b) {
+                new Alert(Alert.AlertType.INFORMATION,"Supplier updated..!").show();
+            }
+            loadSupplierTable();
+        }
     }
 
     public void btnDeleteSupplierOnAction(ActionEvent actionEvent) {
+        if(supplier!=null){
+            boolean deleted = supplierBo.delete(supplier);
+            if(deleted) {
+                new Alert(Alert.AlertType.INFORMATION,"Supplier deleted..!").show();
+            }
+            else{
+                new Alert(Alert.AlertType.WARNING,"Supplier can not be deleted..!").show();
+            }
+        }
     }
 
 

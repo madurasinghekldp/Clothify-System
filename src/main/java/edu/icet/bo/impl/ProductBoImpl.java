@@ -56,4 +56,9 @@ public class ProductBoImpl implements ProductBo {
     public boolean update(Product dto) {
         return productDao.update(new ModelMapper().map(dto,ProductEntity.class));
     }
+
+    @Override
+    public boolean delete(Product dto) {
+        return productDao.delete(new ModelMapper().map(dto,ProductEntity.class));
+    }
 }
