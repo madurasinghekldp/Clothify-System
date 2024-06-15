@@ -1,3 +1,10 @@
 
-r
-java:S1068"*Remove this unused "empDao" private field.(ô•Å®üÿÿÿÿ8ƒ¾Ë•2J$4e8bb735-87d7-4811-9539-8009dc3ebdcb
+T
+java:S1128"2Remove this unused import 'edu.icet.bo.BoFactory'.(»é»Šşÿÿÿÿ8ì‡ß·2
+S
+java:S1128"1Remove this unused import 'edu.icet.dto.Product'.(åô²ëşÿÿÿÿ8ì‡ß·2
+W
+java:S1128
+":Remove this unused import 'edu.icet.entity.ProductEntity'.(®†Æ“8í‡ß·2
+N
+java:S1128"1Remove this unused import 'edu.icet.util.BoType'.(çÚ¡¹8í‡ß·2

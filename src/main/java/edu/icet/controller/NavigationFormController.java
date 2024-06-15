@@ -1,6 +1,8 @@
 package edu.icet.controller;
 
 import com.jfoenix.controls.JFXButton;
+import edu.icet.controller.customer.CustomerManageFormController;
+import edu.icet.controller.employee.EmployeeManageFormController;
 import edu.icet.controller.product.ProductManageFormController;
 import edu.icet.controller.supplier.SupplierManageFormController;
 import edu.icet.controller.user.UserManageFormController;
@@ -70,9 +72,31 @@ public class NavigationFormController {
     }
 
     public void btnManageEmployeeOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/emp-manage-form.fxml"));
+            Scene scene = new Scene(loader.load());
+            EmployeeManageFormController controller = loader.getController();
+            controller.setStage(stage);
+            controller.setUser(user);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void btnManageCustomerOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/customer-manage-form.fxml"));
+            Scene scene = new Scene(loader.load());
+            CustomerManageFormController controller = loader.getController();
+            controller.setStage(stage);
+            controller.setUser(user);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void btnManageOrderOnAction(ActionEvent actionEvent) {

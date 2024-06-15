@@ -13,12 +13,17 @@ import java.util.List;
 public class UserDaoImpl implements UserDao {
     @Override
     public boolean save(UserEntity entity) {
-        Session session = HibernateUtil.getSession();
-        session.getTransaction().begin();
-        session.persist(entity);
-        session.getTransaction().commit();
-        session.close();
-        return true;
+        try{
+            Session session = HibernateUtil.getSession();
+            session.getTransaction().begin();
+            session.persist(entity);
+            session.getTransaction().commit();
+            session.close();
+            return true;
+        }
+        catch(Exception e){
+            return false;
+        }
     }
 
     @Override
@@ -66,12 +71,17 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public boolean update(UserEntity entity) {
-        Session session = HibernateUtil.getSession();
-        session.getTransaction().begin();
-        session.update(entity);
-        session.getTransaction().commit();
-        session.close();
-        return true;
+        try{
+            Session session = HibernateUtil.getSession();
+            session.getTransaction().begin();
+            session.update(entity);
+            session.getTransaction().commit();
+            session.close();
+            return true;
+        }
+        catch(Exception e){
+            return false;
+        }
     }
 
 

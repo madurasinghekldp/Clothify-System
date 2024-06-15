@@ -10,6 +10,7 @@ import edu.icet.dto.User;
 import edu.icet.dto.tm.SupplierTable;
 import edu.icet.entity.SupplierEntity;
 import edu.icet.util.BoType;
+import edu.icet.util.EmailValidator;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -92,7 +93,7 @@ public class SupplierManageFormController implements Initializable {
                 SupplierController.getInstance().generateSupplierId(),
                 inputName.getText(),
                 inputCompany.getText(),
-                inputEmail.getText(),
+                EmailValidator.getInstance().validatedEmail(inputEmail.getText()),
                 inputAddress.getText(),
                 user
         );
@@ -101,20 +102,23 @@ public class SupplierManageFormController implements Initializable {
             new Alert(Alert.AlertType.INFORMATION,"Supplier Added..!").show();
         }
         loadSupplierTable();
+        clearInputs();
     }
 
     public void btnUpdateSupplierOnAction(ActionEvent actionEvent) {
         if(supplier!=null){
             supplier.setName(inputName.getText());
-            supplier.setEmail(inputEmail.getText());
+            supplier.setEmail(EmailValidator.getInstance().validatedEmail(inputEmail.getText()));
             supplier.setCompany(inputCompany.getText());
             supplier.setAddress(inputAddress.getText());
+            supplier.setUser(user);
             boolean b = supplierBo.update(supplier);
             if(b) {
                 new Alert(Alert.AlertType.INFORMATION,"Supplier updated..!").show();
             }
             loadSupplierTable();
         }
+        clearInputs();
     }
 
     public void btnDeleteSupplierOnAction(ActionEvent actionEvent) {
@@ -127,6 +131,8 @@ public class SupplierManageFormController implements Initializable {
                 new Alert(Alert.AlertType.WARNING,"Supplier can not be deleted..!").show();
             }
         }
+        loadSupplierTable();
+        clearInputs();
     }
 
 
@@ -159,5 +165,14 @@ public class SupplierManageFormController implements Initializable {
                 }
         );
         tblSupplier.setItems(table);
+    }
+
+    private void clearInputs(){
+        inputId.setText("");
+        inputName.setText("");
+        inputCompany.setText("");
+        inputEmail.setText("");
+        inputAddress.setText("");
+        supplier = null;
     }
 }

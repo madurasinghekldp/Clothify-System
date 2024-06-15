@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.customer.CustomerManageFormController">
+   <children>
+      <AnchorPane maxHeight="70.0" prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: EDBB91;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#b05977" layoutX="324.0" layoutY="48.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Manage" textAlignment="CENTER" wrappingWidth="344.52650451660156" AnchorPane.leftAnchor="324.0" AnchorPane.rightAnchor="371.47349548339844">
+               <font>
+                  <Font name="Arial Bold" size="39.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="25.0" layoutY="12.0" onAction="#btnGoBackOnAction" prefHeight="44.0" prefWidth="43.0" style="-fx-background-color: DA6969; -fx-background-radius: 10;" text="←" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="71.2" prefHeight="330.0" prefWidth="600.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="71.0">
+         <children>
+            <GridPane prefHeight="330.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="418.20001220703125" minWidth="10.0" prefWidth="348.80003662109374" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="690.3999633789062" minWidth="10.0" prefWidth="690.3999633789062" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+               </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="inputId" focusColor="#da6969" layoutX="49.6" layoutY="19.0" prefHeight="26.0" prefWidth="148.0" promptText="Id" unFocusColor="#da6969" AnchorPane.leftAnchor="49.6" />
+                        <JFXTextField fx:id="inputName" focusColor="#da6969" layoutX="49.6" layoutY="130.0" prefHeight="26.0" prefWidth="148.0" promptText="Name" unFocusColor="#da6969" AnchorPane.leftAnchor="49.6" AnchorPane.rightAnchor="156.00000000000003" />
+                        <JFXTextField fx:id="inputEmail" focusColor="#da6969" layoutX="49.6" layoutY="234.0" prefHeight="26.0" prefWidth="148.0" promptText="Email" unFocusColor="#da6969" AnchorPane.leftAnchor="49.6" AnchorPane.rightAnchor="156.00000000000003" />
+                        <JFXTextField fx:id="inputAddress" focusColor="#da6969" layoutX="49.6" layoutY="337.0" prefHeight="26.0" prefWidth="148.0" promptText="Address" unFocusColor="#da6969" AnchorPane.leftAnchor="49.6" AnchorPane.rightAnchor="156.00000000000003" />
+                        <JFXButton layoutX="50.0" layoutY="420.0" onAction="#btnAddCustomerOnAction" prefHeight="38.0" prefWidth="51.0" style="-fx-background-color: DA6969;" text="Add" textFill="WHITE" AnchorPane.bottomAnchor="43.200000000000024" AnchorPane.leftAnchor="50.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="225.0" layoutY="12.0" onAction="#btnSearchCustomerOnAction" prefHeight="18.0" prefWidth="72.0" style="-fx-background-color: DA6969;" text="Search" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="130.0" layoutY="420.0" onAction="#btnUpdateCustomerOnAction" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: DA6969;" text="Update" textFill="WHITE" AnchorPane.bottomAnchor="43.19999999999997">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="242.0" layoutY="420.0" onAction="#btnDeleteCustomerOnAction" prefHeight="38.0" prefWidth="72.0" style="-fx-background-color: DA6969;" text="Delete" textFill="WHITE" AnchorPane.bottomAnchor="43.19999999999997">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <Separator layoutX="51.2" layoutY="63.0" prefHeight="11.0" prefWidth="278.0" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="21.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="432.0" prefWidth="445.0" GridPane.columnIndex="1">
+                     <children>
+                        <TableView fx:id="tblCustomer" layoutX="36.8" layoutY="151.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="499.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="151.0">
+                           <columns>
+                              <TableColumn fx:id="colId" maxWidth="1.7976931348623157E308" prefWidth="111.20000153779984" text="Id" />
+                              <TableColumn fx:id="colName" maxWidth="1.7976931348623157E308" prefWidth="152.8000030517578" text="Name" />
+                              <TableColumn fx:id="colEmail" maxWidth="1.7976931348623157E308" prefWidth="191.99993896484375" text="Email" />
+                              <TableColumn fx:id="colAddress" maxWidth="1.7976931348623157E308" prefWidth="162.40005493164062" text="Address" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

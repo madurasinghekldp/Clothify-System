@@ -42,13 +42,13 @@ public class RegisterFormController implements Initializable {
 
     public void btnContinueOnAction(ActionEvent actionEvent) {
         UserBuilder builder = new UserBuilder()
-                .setEmail(inputEmail.getText())
+                .setEmail(inputEmail.getText().trim())
                 .setFirstName(inputFirst.getText())
                 .setLastName(inputLast.getText())
                 .setDob(inputDOB.getValue())
                 .setAddress(inputAddress.getText())
                 .setType(UserType.USER);
-        if(userBo.getUser(inputEmail.getText())!=null){
+        if(userBo.getUser(inputEmail.getText().trim())!=null){
             new Alert(Alert.AlertType.ERROR,"User already exists").show();
         }
         else{

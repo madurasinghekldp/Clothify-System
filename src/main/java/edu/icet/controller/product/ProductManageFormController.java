@@ -84,10 +84,10 @@ public class ProductManageFormController implements Initializable {
         product = new Product(
                 ProductController.getInstance().generateProductId(),
                 inputName.getText(),
-                Integer.parseInt(inputSize.getText()),
-                Double.parseDouble(inputPrice.getText()),
-                Integer.parseInt(inputQuantity.getText()),
-                SupplierController.getInstance().searchSupplier(inputSupplier.getValue().toString()),
+                (inputSize.getText().trim()=="")?0:Integer.parseInt(inputSize.getText()),
+                (inputPrice.getText().trim()=="")?0.0:Double.parseDouble(inputPrice.getText()),
+                (inputQuantity.getText().trim()=="")?0:Integer.parseInt(inputQuantity.getText()),
+                SupplierController.getInstance().searchSupplier((String) inputSupplier.getValue()),
                 (Category) inputCategory.getValue()
         );
         boolean b = productBo.save(product);
@@ -95,6 +95,7 @@ public class ProductManageFormController implements Initializable {
             new Alert(Alert.AlertType.INFORMATION,"Product Added..!").show();
         }
         loadProductTable();
+        clearInputs();
     }
 
     public void btnSearchUserOnAction(ActionEvent actionEvent) {
@@ -126,6 +127,7 @@ public class ProductManageFormController implements Initializable {
             }
             loadProductTable();
         }
+        clearInputs();
     }
 
     public void btnDeleteProductOnAction(ActionEvent actionEvent) {
@@ -138,6 +140,8 @@ public class ProductManageFormController implements Initializable {
                 new Alert(Alert.AlertType.WARNING,"Product can not be deleted..!").show();
             }
         }
+        loadProductTable();
+        clearInputs();
     }
 
     @Override
@@ -178,19 +182,30 @@ public class ProductManageFormController implements Initializable {
         ObservableList<ProductTable> table = FXCollections.observableArrayList();
         List<Product> all = productBo.getAll();
         all.forEach(
-                product -> {
+                product1 -> {
                     ProductTable ptbl = new ProductTable(
-                            product.getId(),
-                            product.getName(),
-                            product.getSize(),
-                            product.getPrice(),
-                            product.getQty(),
-                            product.getSupplier().getId(),
-                            product.getCategory()
+                            product1.getId(),
+                            product1.getName(),
+                            product1.getSize(),
+                            product1.getPrice(),
+                            product1.getQty(),
+                            product1.getSupplier().getId(),
+                            product1.getCategory()
                     );
                     table.add(ptbl);
                 }
         );
         tblProduct.setItems(table);
+    }
+
+    private void clearInputs(){
+        inputId.setText("");
+        inputName.setText("");
+        inputSize.setText("");
+        inputPrice.setText("");
+        inputQuantity.setText("");
+        inputCategory.setValue(null);
+        inputSupplier.setValue(null);
+        product = null;
     }
 }

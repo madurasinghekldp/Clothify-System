@@ -1,9 +1,6 @@
 package edu.icet.dao;
 
-import edu.icet.dao.impl.EmployeeDaoImpl;
-import edu.icet.dao.impl.ProductDaoImpl;
-import edu.icet.dao.impl.SupplierDaoImpl;
-import edu.icet.dao.impl.UserDaoImpl;
+import edu.icet.dao.impl.*;
 import edu.icet.util.DaoType;
 
 public class DaoFactory {
@@ -19,6 +16,7 @@ public class DaoFactory {
             case USER: return (T) new UserDaoImpl();
             case PRODUCT: return (T) new ProductDaoImpl();
             case EMPLOYEE: return (T) new EmployeeDaoImpl();
+            case CUSTOMER: return (T) new CustomerDaoImpl();
         }
         return null;
     }

@@ -8,6 +8,7 @@ import edu.icet.controller.NavigationFormController;
 import edu.icet.dto.User;
 import edu.icet.dto.tm.UserTable;
 import edu.icet.util.BoType;
+import edu.icet.util.EmailValidator;
 import edu.icet.util.Encryptor;
 import edu.icet.util.UserType;
 import javafx.collections.FXCollections;
@@ -101,7 +102,7 @@ public class UserManageFormController implements Initializable{
                 inputDOB.getValue(),
                 inputAddress.getText(),
                 (UserType)(inputType.getValue()),
-                inputEmail.getText(),
+                EmailValidator.getInstance().validatedEmail(inputEmail.getText().trim()),
                 new Encryptor().getEncryptedPassword("x230y5d4h100ks8z")
         );
         if(userBo.getUser(inputEmail.getText())!=null){
@@ -112,7 +113,7 @@ public class UserManageFormController implements Initializable{
             if(saved) new Alert(Alert.AlertType.INFORMATION,"New user saved..!").show();
             loadUserTable();
         }
-
+        clearInputs();
     }
 
     public void btnUpdateUserOnAction(ActionEvent actionEvent) {
@@ -122,11 +123,12 @@ public class UserManageFormController implements Initializable{
             opUser.setDob(inputDOB.getValue());
             opUser.setType((UserType) inputType.getValue());
             opUser.setAddress(inputAddress.getText());
-
+            opUser.setEmail(EmailValidator.getInstance().validatedEmail(inputEmail.getText().trim()));
             boolean updated = userBo.update(opUser);
             if(updated) new Alert(Alert.AlertType.INFORMATION,"User updated..!").show();
             loadUserTable();
         }
+        clearInputs();
     }
 
     public void btnDeleteUserOnAction(ActionEvent actionEvent) {
@@ -140,6 +142,7 @@ public class UserManageFormController implements Initializable{
             }
             loadUserTable();
         }
+        clearInputs();
     }
 
 
@@ -183,6 +186,17 @@ public class UserManageFormController implements Initializable{
                 }
         );
         tblUser.setItems(table);
+    }
+
+    private void clearInputs(){
+        inputId.setText("");
+        inputFirstName.setText("");
+        inputLastName.setText("");
+        inputEmail.setText("");
+        inputAddress.setText("");
+        inputDOB.setValue(null);
+        inputType.setValue(null);
+        opUser = null;
     }
 
 }
