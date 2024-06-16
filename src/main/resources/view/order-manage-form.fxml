@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.order.OrderManageFormController">
+   <children>
+      <AnchorPane maxHeight="70.0" prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: EDBB91;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#b05977" layoutX="324.0" layoutY="48.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Manage" textAlignment="CENTER" wrappingWidth="344.52650451660156" AnchorPane.leftAnchor="324.0" AnchorPane.rightAnchor="371.47349548339844">
+               <font>
+                  <Font name="Arial Bold" size="39.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="25.0" layoutY="12.0" onAction="#btnGoBackOnAction" prefHeight="44.0" prefWidth="43.0" style="-fx-background-color: DA6969; -fx-background-radius: 10;" text="←" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="71.2" prefHeight="330.0" prefWidth="600.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="71.0">
+         <children>
+            <GridPane prefHeight="330.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="418.20001220703125" minWidth="10.0" prefWidth="348.80003662109374" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="690.3999633789062" minWidth="10.0" prefWidth="690.3999633789062" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+               </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="inputId" focusColor="#da6969" layoutX="49.6" layoutY="19.0" prefHeight="26.0" prefWidth="148.0" promptText="Id" unFocusColor="#da6969" AnchorPane.leftAnchor="49.6" />
+                        <JFXTextField fx:id="inputDate" focusColor="#da6969" layoutX="46.4" layoutY="107.0" prefHeight="26.0" prefWidth="148.0" promptText="Date" unFocusColor="#da6969" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="156.0" />
+                        <JFXButton layoutX="50.0" layoutY="420.0" onAction="#btnAddToCartOnAction" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: DA6969;" text="Add To Cart" textFill="WHITE" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="50.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="225.0" layoutY="12.0" onAction="#btnSearchOrderOnAction" prefHeight="18.0" prefWidth="72.0" style="-fx-background-color: DA6969;" text="Search" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="214.0" layoutY="420.0" onAction="#btnReturnOnAction" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: DA6969;" text="Return" textFill="WHITE" AnchorPane.bottomAnchor="43.200000000000045">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <Separator layoutX="51.2" layoutY="63.0" prefHeight="11.0" prefWidth="278.0" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="21.0" />
+                        <JFXComboBox fx:id="inputEmployee" focusColor="#da6969" layoutX="48.0" layoutY="171.0" prefHeight="26.0" prefWidth="144.0" promptText="Employee" unFocusColor="#da6969" />
+                        <JFXComboBox fx:id="inputProduct" focusColor="#da6969" layoutX="48.0" layoutY="300.0" prefHeight="26.0" prefWidth="144.0" promptText="Product" unFocusColor="#da6969" />
+                        <JFXTextField fx:id="inputQty" focusColor="#da6969" layoutX="48.0" layoutY="362.0" prefHeight="26.0" prefWidth="148.0" promptText="Quantity" unFocusColor="#da6969" />
+                        <JFXComboBox fx:id="inputCustomer" focusColor="#da6969" layoutX="48.0" layoutY="234.0" prefHeight="26.0" prefWidth="144.0" promptText="Customer" unFocusColor="#da6969" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="432.0" prefWidth="445.0" GridPane.columnIndex="1">
+                     <children>
+                        <TableView fx:id="tblCart" layoutX="36.8" layoutY="21.4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="122.0" prefWidth="618.0" AnchorPane.leftAnchor="36.8" AnchorPane.rightAnchor="35.200000000000045" AnchorPane.topAnchor="21.4">
+                           <columns>
+                              <TableColumn fx:id="colProduct" maxWidth="1.7976931348623157E308" prefWidth="110.39995270967484" text="Product" />
+                              <TableColumn fx:id="colProductName" maxWidth="1.7976931348623157E308" prefWidth="223.2000274658203" text="Product Name" />
+                              <TableColumn fx:id="colUnitPrice" maxWidth="1.7976931348623157E308" prefWidth="109.5999755859375" text="Unit Price" />
+                              <TableColumn fx:id="colQty" maxWidth="1.7976931348623157E308" prefWidth="88.79995727539062" text="Quantity" />
+                              <TableColumn fx:id="colTotal" maxWidth="1.7976931348623157E308" prefWidth="87.199951171875" text="Total" />
+                           </columns>
+                        </TableView>
+                        <TableView fx:id="tblOrder" layoutX="36.0" layoutY="211.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="122.0" prefWidth="618.0" AnchorPane.bottomAnchor="168.00000000000003">
+                           <columns>
+                              <TableColumn fx:id="colOrder" maxWidth="1.7976931348623157E308" prefWidth="60.00000077486038" text="Order Id" />
+                              <TableColumn fx:id="colEmployee" maxWidth="1.7976931348623157E308" prefWidth="98.4000129699707" text="Employee" />
+                              <TableColumn fx:id="colPayment" maxWidth="1.7976931348623157E308" prefWidth="109.60005187988281" text="Payment Type" />
+                              <TableColumn fx:id="colCustomer" maxWidth="1.7976931348623157E308" prefWidth="149.60003662109375" text="Customer" />
+                              <TableColumn fx:id="colTotal2" maxWidth="1.7976931348623157E308" prefWidth="108.00003051757812" text="Total" />
+                              <TableColumn fx:id="colDate" maxWidth="1.7976931348623157E308" prefWidth="104.0" text="Date" />
+                           </columns>
+                        </TableView>
+                        <TableView fx:id="tblOrderDetail" layoutX="35.0" layoutY="350.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="122.0" prefWidth="618.0" AnchorPane.bottomAnchor="29.200000000000017">
+                           <columns>
+                              <TableColumn fx:id="colOrder2" maxWidth="1.7976931348623157E308" prefWidth="238.40001678466797" text="Order Id" />
+                              <TableColumn fx:id="colProduct2" maxWidth="1.7976931348623157E308" prefWidth="232.7999267578125" text="Product Id" />
+                              <TableColumn fx:id="colQty2" maxWidth="1.7976931348623157E308" prefWidth="147.19998168945312" text="Quantity" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

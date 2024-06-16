@@ -1,8 +1,6 @@
 package edu.icet.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,11 +10,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 public class OrderDetailEntity {
+    @Id
     @ManyToOne
     @JoinColumn(name = "orderId",nullable = false)
     private OrderEntity order;
+    @Id
     @ManyToOne
     @JoinColumn(name = "productId",nullable = false)
     private ProductEntity product;
+    @Column(nullable = false)
     private Integer qty;
 }

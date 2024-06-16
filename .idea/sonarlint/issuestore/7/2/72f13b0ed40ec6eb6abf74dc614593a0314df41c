@@ -1,25 +1,39 @@
 
-–
-java:S1104"SMake inputId a static final constant or non-public and provide accessors if needed.(¶İº¡8¶Ããè2J$dfa246ac-7976-404e-b3bc-4e0a6d5e59d9
-
-java:S1104"UMake inputName a static final constant or non-public and provide accessors if needed.(ØÒÅøÿÿÿÿ8¶Ããè2J$41e7c5c4-7719-42bf-9fe1-6d110f8d7481
-
-java:S1104"VMake inputEmail a static final constant or non-public and provide accessors if needed.(ÙøÍ±şÿÿÿÿ8·Ããè2J$36083181-e5a1-4355-9b21-9ba97c0e43ac
-›
-java:S1104"XMake inputAddress a static final constant or non-public and provide accessors if needed.(øŸ½ó8·Ããè2J$c88a7efb-8e73-4459-ac3f-7bacf8ef223c
-Ä
-java:S11868"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(î±ÚË8ÆÃãè2J$9d7f2272-0c0e-47e6-882e-5e50cc18a9ad
-Ä
-java:S1186;"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çú¤²8ÆÃãè2J$e835102a-6332-4939-bde7-eeb5babc9914
-Ä
-java:S1186>"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(œ×¦ş8ÆÃãè2J$3f28f744-b5df-4532-b2e4-7745d4520027
-É
-java:S1186B"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8ÆÃãè2J$970d0fb8-a135-481b-9381-361bba85fdb0
-Ÿ
-java:S1450"WRemove the "customer" field and declare it as a local variable in the relevant methods.(íŸŞÛşÿÿÿÿ8ÈÃãè2J$a6b100bc-6d73-43b8-a57a-47e5111aae67
-t
-java:S1172$"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8ËÃãè2J$82641fe5-5764-4718-a39d-5fc47905fdc9
-z
-java:S11722"2Remove this unused method parameter "actionEvent".(ÜÃèåøÿÿÿÿ8ßÃãè2J$8f0edf67-5444-46dc-94d4-40e8f817390e
-t
-java:S1068",Remove this unused "customer" private field.(íŸŞÛşÿÿÿÿ8âÃãè2J$9f8191bb-a6f7-44a9-80cd-1da5cb7f6afd
+L
+java:S3740""/Provide the parametrized type for this generic.(“ĞÃâ8É†Û‚2
+Q
+java:S3740#"/Provide the parametrized type for this generic.(ÊÚÎ¨ùÿÿÿÿ8É†Û‚2
+L
+java:S3740$"/Provide the parametrized type for this generic.(ƒäÆ8É†Û‚2
+L
+java:S3740%"/Provide the parametrized type for this generic.(¯ÿı°8Ê†Û‚2
+Q
+java:S3740&"/Provide the parametrized type for this generic.(•³îŞùÿÿÿÿ8Ê†Û‚2
+p
+java:S1104"SMake inputId a static final constant or non-public and provide accessors if needed.(¶İº¡8Ì†Û‚2
+w
+java:S1104"UMake inputName a static final constant or non-public and provide accessors if needed.(ØÒÅøÿÿÿÿ8Ì†Û‚2
+x
+java:S1104 "VMake inputEmail a static final constant or non-public and provide accessors if needed.(ÙøÍ±şÿÿÿÿ8Ì†Û‚2
+u
+java:S1104!"XMake inputAddress a static final constant or non-public and provide accessors if needed.(øŸ½ó8Ì†Û‚2
+n
+java:S1104""QMake colId a static final constant or non-public and provide accessors if needed.(“ĞÃâ8Ì†Û‚2
+u
+java:S1104#"SMake colName a static final constant or non-public and provide accessors if needed.(ÊÚÎ¨ùÿÿÿÿ8Ì†Û‚2
+q
+java:S1104$"TMake colEmail a static final constant or non-public and provide accessors if needed.(ƒäÆ8Ì†Û‚2
+s
+java:S1104%"VMake colAddress a static final constant or non-public and provide accessors if needed.(¯ÿı°8Ì†Û‚2
+y
+java:S1104&"WMake tblCustomer a static final constant or non-public and provide accessors if needed.(•³îŞùÿÿÿÿ8Ì†Û‚2
+N
+java:S11727"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8ù†Û‚2
+T
+java:S1172E"2Remove this unused method parameter "actionEvent".(ÜÃèåøÿÿÿÿ8†‡Û‚2
+O
+java:S1172m"2Remove this unused method parameter "actionEvent".(î±ÚË8‹‡Û‚2
+O
+java:S1172y"2Remove this unused method parameter "actionEvent".(Çú¤²8‡Û‚2
+P
+java:S1172‡"2Remove this unused method parameter "actionEvent".(œ×¦ş8‡Û‚2

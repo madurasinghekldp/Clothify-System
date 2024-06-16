@@ -5,7 +5,7 @@ import edu.icet.dto.Employee;
 
 import java.util.List;
 
-public interface CustomerBo {
+public interface CustomerBo extends SuperBo{
     boolean save(Customer dto);
     long getCount();
     String getLast();

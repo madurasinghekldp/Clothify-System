@@ -23,7 +23,7 @@ public class CustomerController {
         return instance;
     }
 
-    public String generateEmployeeId(){
+    public String generateCustomerId(){
         long count = customerBo.getCount();
         if (count == 0) {
             return "C001";
