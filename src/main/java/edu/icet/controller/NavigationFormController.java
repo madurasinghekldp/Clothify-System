@@ -3,6 +3,7 @@ package edu.icet.controller;
 import com.jfoenix.controls.JFXButton;
 import edu.icet.controller.customer.CustomerManageFormController;
 import edu.icet.controller.employee.EmployeeManageFormController;
+import edu.icet.controller.order.OrderManageFormController;
 import edu.icet.controller.product.ProductManageFormController;
 import edu.icet.controller.supplier.SupplierManageFormController;
 import edu.icet.controller.user.UserManageFormController;
@@ -100,6 +101,17 @@ public class NavigationFormController {
     }
 
     public void btnManageOrderOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/order-manage-form.fxml"));
+            Scene scene = new Scene(loader.load());
+            OrderManageFormController controller = loader.getController();
+            controller.setStage(stage);
+            controller.setUser(user);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 

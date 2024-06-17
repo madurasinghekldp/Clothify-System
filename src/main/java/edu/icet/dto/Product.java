@@ -17,4 +17,9 @@ public class Product {
     private Integer qty;
     private Supplier supplier;
     private Category category;
+
+    @Override
+    public String toString() {
+        return id+" | "+name+" | "+category+" | "+size;
+    }
 }

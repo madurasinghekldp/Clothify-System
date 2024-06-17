@@ -12,4 +12,9 @@ public class Customer {
     private String name;
     private String email;
     private String address;
+
+    @Override
+    public String toString() {
+        return id+" | "+name;
+    }
 }

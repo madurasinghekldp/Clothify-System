@@ -3,6 +3,7 @@ package edu.icet.util;
 import jakarta.mail.*;
 import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeMessage;
+import javafx.scene.control.Alert;
 
 import java.util.Properties;
 
@@ -23,21 +24,22 @@ public class SendMailUtil {
         final String username = "madurasinghekldp@gmail.com";
         final String password = "uincwwivxrtdgtva";
 
-        Properties prop = new Properties();
-        prop.put("mail.smtp.host", "smtp.gmail.com");
-        prop.put("mail.smtp.port", "465");
-        prop.put("mail.smtp.auth", "true");
-        prop.put("mail.smtp.socketFactory.port", "465");
-        prop.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-
-        Session session = Session.getInstance(prop,
-                new jakarta.mail.Authenticator() {
-                    protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(username, password);
-                    }
-                });
-
         try {
+            Properties prop = new Properties();
+            prop.put("mail.smtp.host", "smtp.gmail.com");
+            prop.put("mail.smtp.port", "465");
+            prop.put("mail.smtp.auth", "true");
+            prop.put("mail.smtp.socketFactory.port", "465");
+            prop.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+
+            Session session = Session.getInstance(prop,
+                    new jakarta.mail.Authenticator() {
+                        protected PasswordAuthentication getPasswordAuthentication() {
+                            return new PasswordAuthentication(username, password);
+                        }
+                    });
+
+
 
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress("madurasinghekldp@gmail.com"));
@@ -55,7 +57,7 @@ public class SendMailUtil {
             System.out.println("Done");
 
         } catch (MessagingException e) {
-            e.printStackTrace();
+            new Alert(Alert.AlertType.ERROR,"Network Error!").show();
         }
     }
 }

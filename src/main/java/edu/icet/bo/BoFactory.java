@@ -18,6 +18,8 @@ public class BoFactory {
             case PRODUCT: return (T) new ProductBoImpl();
             case EMPLOYEE: return (T) new EmployeeBoImpl();
             case CUSTOMER: return (T) new CustomerBoImpl();
+            case ORDER: return (T) new OrderBoImpl();
+            case ORDERDETAIL: return (T) new OrderDetailBoImpl();
         }
         return null;
     }

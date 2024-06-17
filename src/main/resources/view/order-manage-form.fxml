@@ -4,6 +4,7 @@
 <?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -47,7 +48,7 @@
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
                         <JFXTextField fx:id="inputId" focusColor="#da6969" layoutX="49.6" layoutY="19.0" prefHeight="26.0" prefWidth="148.0" promptText="Id" unFocusColor="#da6969" AnchorPane.leftAnchor="49.6" />
-                        <JFXTextField fx:id="inputDate" focusColor="#da6969" layoutX="46.4" layoutY="107.0" prefHeight="26.0" prefWidth="148.0" promptText="Date" unFocusColor="#da6969" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="156.0" />
+                        <JFXTextField fx:id="inputDate" editable="false" focusColor="#da6969" layoutX="49.0" layoutY="107.0" prefHeight="26.0" prefWidth="144.0" promptText="Date" unFocusColor="#da6969" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="156.0" />
                         <JFXButton layoutX="50.0" layoutY="420.0" onAction="#btnAddToCartOnAction" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: DA6969;" text="Add To Cart" textFill="WHITE" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="50.0">
                            <font>
                               <Font size="16.0" />
@@ -68,6 +69,8 @@
                         <JFXComboBox fx:id="inputProduct" focusColor="#da6969" layoutX="48.0" layoutY="300.0" prefHeight="26.0" prefWidth="144.0" promptText="Product" unFocusColor="#da6969" />
                         <JFXTextField fx:id="inputQty" focusColor="#da6969" layoutX="48.0" layoutY="362.0" prefHeight="26.0" prefWidth="148.0" promptText="Quantity" unFocusColor="#da6969" />
                         <JFXComboBox fx:id="inputCustomer" focusColor="#da6969" layoutX="48.0" layoutY="234.0" prefHeight="26.0" prefWidth="144.0" promptText="Customer" unFocusColor="#da6969" />
+                        <Label layoutX="210.0" layoutY="366.0" prefHeight="26.0" prefWidth="55.0" text="Available" />
+                        <Label fx:id="lblQty" layoutX="283.0" layoutY="367.0" prefHeight="26.0" prefWidth="43.0" text="0" />
                      </children>
                   </AnchorPane>
                   <AnchorPane prefHeight="432.0" prefWidth="445.0" GridPane.columnIndex="1">
@@ -98,6 +101,11 @@
                               <TableColumn fx:id="colQty2" maxWidth="1.7976931348623157E308" prefWidth="147.19998168945312" text="Quantity" />
                            </columns>
                         </TableView>
+                        <JFXButton layoutX="572.0" layoutY="153.0" onAction="#btnPlaceOrderOnAction" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: DA6969;" text="Place Order" textFill="WHITE" />
+                        <JFXButton layoutX="37.0" layoutY="153.0" onAction="#btnClearOnAction" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: DA6969;" text="Clear" textFill="WHITE" />
+                        <JFXComboBox fx:id="inputPaymentType" focusColor="#da6969" layoutX="436.0" layoutY="153.0" prefHeight="26.0" prefWidth="116.0" promptText="Payment Type" unFocusColor="#da6969" />
+                        <Label layoutX="293.0" layoutY="160.0" prefHeight="26.0" prefWidth="43.0" text="Total :" />
+                        <Label fx:id="lblTotal" layoutX="344.0" layoutY="160.0" prefHeight="26.0" prefWidth="72.0" text="0" />
                      </children>
                   </AnchorPane>
                </children>

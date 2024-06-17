@@ -1,3 +1,118 @@
 
-_
-java:S2094"BRemove this empty class, write its code or make it an "interface".(İ‘ğª8ÏŞ‚2
+w
+java:S3740'"/Provide the parametrized type for this generic.(—§Ÿûÿÿÿÿ8ö·æ»‚2J$dd0d6fb7-5119-44f0-bef5-0720159f1f95
+r
+java:S3740("/Provide the parametrized type for this generic.(ãßÍÕ8÷·æ»‚2J$3d157442-071a-4a53-a89d-cc7c6fdd2d25
+w
+java:S3740*"/Provide the parametrized type for this generic.(Ùšß…ıÿÿÿÿ8÷·æ»‚2J$c0686de8-0757-4bb3-a7c7-3869d99eee1a
+r
+java:S3740+"/Provide the parametrized type for this generic.(Şâê8÷·æ»‚2J$11e48886-8f43-4e01-be93-978f097fa72f
+w
+java:S3740,"/Provide the parametrized type for this generic.(É±şıÿÿÿÿ8÷·æ»‚2J$b9bae745-22e5-4a7b-8062-c1eaccfebed7
+w
+java:S3740-"/Provide the parametrized type for this generic.(Ãâ³½ıÿÿÿÿ8÷·æ»‚2J$2083f43a-31ed-47f2-a302-85ad8e5b1ea3
+w
+java:S3740."/Provide the parametrized type for this generic.(°Óú‰ùÿÿÿÿ8÷·æ»‚2J$2eb55d5b-906f-48ac-8620-d6199643a615
+r
+java:S3740/"/Provide the parametrized type for this generic.(¾ú€8÷·æ»‚2J$34babcdd-defd-45ef-9e7e-c35d4017e312
+r
+java:S37400"/Provide the parametrized type for this generic.(Õ…¼í8÷·æ»‚2J$0a149280-98d5-47eb-8d81-762b4456f8dc
+w
+java:S37401"/Provide the parametrized type for this generic.(‰å¾…úÿÿÿÿ8÷·æ»‚2J$c916930e-6c3f-4b32-b719-58da5f2b9853
+r
+java:S37402"/Provide the parametrized type for this generic.(¨­Ì˜8÷·æ»‚2J$6fd81562-13ca-48df-a679-099f9016ece8
+r
+java:S37403"/Provide the parametrized type for this generic.(ŸøÅµ8÷·æ»‚2J$737de1eb-827d-49ee-b70c-648e2c497854
+w
+java:S37404"/Provide the parametrized type for this generic.(£ìÙ÷ıÿÿÿÿ8÷·æ»‚2J$4b7c65d7-4602-4f49-b8ff-f64cb88e16bf
+w
+java:S37405"/Provide the parametrized type for this generic.(å®Ûµøÿÿÿÿ8÷·æ»‚2J$0d4e3539-1ab5-4f4d-ab44-cf7a14e7eb96
+r
+java:S37406"/Provide the parametrized type for this generic.(’òÄÊ8÷·æ»‚2J$d47a1942-d5de-4e3e-96df-891e20e9a027
+r
+java:S37407"/Provide the parametrized type for this generic.(ˆş³8÷·æ»‚2J$17c3c0e5-7580-4503-a076-ded687231192
+w
+java:S37408"/Provide the parametrized type for this generic.(ïû©ğÿÿÿÿÿ8÷·æ»‚2J$1f22eff7-15ae-46fe-bc4a-59bbc1d878c7
+r
+java:S37409"/Provide the parametrized type for this generic.(²¶³8÷·æ»‚2J$2f36a762-87b4-41e9-a263-8adc48504edb
+r
+java:S3740:"/Provide the parametrized type for this generic.(¨’˜Ù8÷·æ»‚2J$196ceb0b-848a-4772-8d24-236dd1b94355
+r
+java:S3740;"/Provide the parametrized type for this generic.(ÑÕŒñ8÷·æ»‚2J$c840ee3e-eb93-427e-b261-ec587863c45c
+w
+java:S3740<"/Provide the parametrized type for this generic.(¾ÛÀ”úÿÿÿÿ8÷·æ»‚2J$0fce7365-8ad8-437a-8be1-c8ebca8a373d
+–
+java:S1104%"SMake inputId a static final constant or non-public and provide accessors if needed.(¶İº¡8ú·æ»‚2J$d3b479f0-126c-4438-a191-c126bbb971f6
+˜
+java:S1104&"UMake inputDate a static final constant or non-public and provide accessors if needed.(ÆÁ‡ş8ú·æ»‚2J$477af626-c712-493c-b1db-6f598c4d7843
+¡
+java:S1104'"YMake inputEmployee a static final constant or non-public and provide accessors if needed.(—§Ÿûÿÿÿÿ8ú·æ»‚2J$d07d42f6-5283-4a9f-85d3-244aa1286589
+›
+java:S1104("XMake inputProduct a static final constant or non-public and provide accessors if needed.(ãßÍÕ8ú·æ»‚2J$cbb9b3b5-3d09-4237-b5b1-6eaf869db11e
+–
+java:S1104)"TMake inputQty a static final constant or non-public and provide accessors if needed.(¡¢Ö8ú·æ»‚2J$7cbd9387-703c-446c-87a2-b49fbc0cdea5
+¡
+java:S1104*"YMake inputCustomer a static final constant or non-public and provide accessors if needed.(Ùšß…ıÿÿÿÿ8ú·æ»‚2J$519a247b-7296-4408-81e8-6171bfd8b530
+–
+java:S1104+"SMake tblCart a static final constant or non-public and provide accessors if needed.(Şâê8ú·æ»‚2J$cde6d445-a997-4740-8e07-e0169bf5521a
+œ
+java:S1104,"TMake tblOrder a static final constant or non-public and provide accessors if needed.(É±şıÿÿÿÿ8ú·æ»‚2J$bb85e2bb-746c-464a-ac0c-1b9f2849222f
+¢
+java:S1104-"ZMake tblOrderDetail a static final constant or non-public and provide accessors if needed.(Ãâ³½ıÿÿÿÿ8ú·æ»‚2J$8791c296-8322-4d71-bcda-551143ceeb54
+
+java:S1104."VMake colProduct a static final constant or non-public and provide accessors if needed.(°Óú‰ùÿÿÿÿ8ú·æ»‚2J$ce4b6051-f394-46ea-b1e8-070fcfaa161d
+
+java:S1104/"ZMake colProductName a static final constant or non-public and provide accessors if needed.(¾ú€8ú·æ»‚2J$f59dd3cc-644a-4946-98ce-957334f39984
+›
+java:S11040"XMake colUnitPrice a static final constant or non-public and provide accessors if needed.(Õ…¼í8ú·æ»‚2J$219d9511-26d9-43e4-8514-3f9e1db662e6
+š
+java:S11041"RMake colQty a static final constant or non-public and provide accessors if needed.(‰å¾…úÿÿÿÿ8ú·æ»‚2J$6959dc04-c2b1-46e2-9b9c-295b65325ae8
+—
+java:S11042"TMake colTotal a static final constant or non-public and provide accessors if needed.(¨­Ì˜8ú·æ»‚2J$94ed56f8-e927-46cb-9719-2202037093ff
+—
+java:S11043"TMake colOrder a static final constant or non-public and provide accessors if needed.(ŸøÅµ8ú·æ»‚2J$1cde20d7-3774-4dba-93dd-057c9bfd518f
+Ÿ
+java:S11044"WMake colEmployee a static final constant or non-public and provide accessors if needed.(£ìÙ÷ıÿÿÿÿ8ú·æ»‚2J$1e0d3e32-d7f4-47f7-aee2-d56415e54366
+
+java:S11045"VMake colPayment a static final constant or non-public and provide accessors if needed.(å®Ûµøÿÿÿÿ8ú·æ»‚2J$71071206-95ef-490f-a66c-d776df8ffbf8
+š
+java:S11046"WMake colCustomer a static final constant or non-public and provide accessors if needed.(’òÄÊ8ú·æ»‚2J$e95b3865-c20b-44ae-9725-9698d34d2dcd
+˜
+java:S11047"UMake colTotal2 a static final constant or non-public and provide accessors if needed.(ˆş³8ú·æ»‚2J$3140b5de-c976-43f2-bbeb-9bd35a37f485
+›
+java:S11048"SMake colDate a static final constant or non-public and provide accessors if needed.(ïû©ğÿÿÿÿÿ8ú·æ»‚2J$fff1731e-e047-4b98-bbad-191a0869b537
+˜
+java:S11049"UMake colOrder2 a static final constant or non-public and provide accessors if needed.(²¶³8ú·æ»‚2J$88e85dd1-9fad-494f-bf6f-352d1fb36a48
+š
+java:S1104:"WMake colProduct2 a static final constant or non-public and provide accessors if needed.(¨’˜Ù8ú·æ»‚2J$3f5c30d9-9c38-4939-9248-f1c465295b17
+–
+java:S1104;"SMake colQty2 a static final constant or non-public and provide accessors if needed.(ÑÕŒñ8ú·æ»‚2J$3c4f2cee-7e52-421a-820b-4b3d9bd032f3
+¤
+java:S1104<"\Make inputPaymentType a static final constant or non-public and provide accessors if needed.(¾ÛÀ”úÿÿÿÿ8ú·æ»‚2J$024a9ac5-f332-4997-9aba-3c30b0bbd1a7
+š
+java:S1104="RMake lblQty a static final constant or non-public and provide accessors if needed.(²´ºëúÿÿÿÿ8ú·æ»‚2J$efa10b8f-9e33-4a48-ab4a-8525b6d0d6a5
+—
+java:S1104>"TMake lblTotal a static final constant or non-public and provide accessors if needed.(ÿêìˆ8ú·æ»‚2J$774b46a3-dfad-49f9-a1c4-5d0a36091d39
+
+java:S4973g"<Strings and Boxed types should be compared using "equals()".(Ê“Œ8ü·æ»‚2J$444a468e-5f2b-49d4-8027-4f6796111e50
+Å
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(œˆÙÀ8›¸æ»‚2J$91ab6e54-7f90-44c7-a395-8eacf3ebbae2
+Ê
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(—²Üğøÿÿÿÿ8›¸æ»‚2J$5c1e8fbc-883e-4171-b908-b9832734d54a
+Å
+java:S1186“"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ŠÜÎ£8›¸æ»‚2J$280eea34-d165-45b9-8c2c-603e5d7a84c4
+œ
+java:S1450C"TRemove the "order" field and declare it as a local variable in the relevant methods.(åï’‘øÿÿÿÿ8¸æ»‚2J$1768350c-db93-456f-a08a-c9fdb4b0c2ef
+
+java:S1450D"VRemove the "product" field and declare it as a local variable in the relevant methods.(„¼”Úùÿÿÿÿ8¸æ»‚2J$4d609717-7944-47a0-9462-4a85401e383b
+t
+java:S1172W"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8¡¸æ»‚2J$0a3b74ed-25e2-4dfc-9882-21a020ecc561
+z
+java:S1172e"2Remove this unused method parameter "actionEvent".(Š²Ô¢úÿÿÿÿ8®¸æ»‚2J$c322fdf1-f38a-4259-acf7-dd69e2539e78
+v
+java:S1172€"2Remove this unused method parameter "actionEvent".(³¼°”8°¸æ»‚2J$66ab5190-fada-49d3-ade4-eb433a5bfa91
+p
+java:S1602¤",Remove useless curly braces around statement(°¨¿é8´¸æ»‚2J$88b4de65-6200-438d-bef4-69e9707d62ed
+
+java:S1128
+"JRemove this unused import 'edu.icet.controller.product.ProductController'.(áÛƒ¨8¸¸æ»‚2J$78b8a1f8-eb4e-4e8d-bfde-d11d907cab8d

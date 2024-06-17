@@ -1,19 +1,19 @@
 
 ¡
-java:S1104"YMake btnManageUser a static final constant or non-public and provide accessors if needed.(ìˆ¦´ÿÿÿÿÿ8¯¼œÖ€2J$076caae6-2845-4b1b-b6e1-a96cd30b0527
-É
-java:S1186f"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çþù¥üÿÿÿÿ8À¼œÖ€2J$a38f32b1-f1a3-4e68-9d8a-a250362acce1
+java:S1104"YMake btnManageUser a static final constant or non-public and provide accessors if needed.(ìˆ¦´ÿÿÿÿÿ8¯¼œÖ€2J$35e49ceb-2526-45b2-a7ea-ca3913590d19
 Ã
-java:S1186j"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ïÁ Y8À¼œÖ€2J$6d9d8c18-c19d-4f90-b1a2-a52fed8dd977
+java:S1186v"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ïÁ Y8À¼œÖ€2J$458b72d1-5901-4a03-b3b2-fb5a4925ec17
 u
-java:S1172 "2Remove this unused method parameter "actionEvent".(¹ê”§8Å¼œÖ€2J$d1965d60-e957-4c71-99de-66785e94b6df
+java:S1172!"2Remove this unused method parameter "actionEvent".(¹ê”§8Å¼œÖ€2J$c40ba947-1bba-413a-8eb4-9f36b0c666b4
 z
-java:S1172."2Remove this unused method parameter "actionEvent".(÷ Ùëÿÿÿÿÿ8Ú¼œÖ€2J$6e4a7283-2c86-4cf3-aa45-1f6d1887a11d
+java:S1172/"2Remove this unused method parameter "actionEvent".(÷ Ùëÿÿÿÿÿ8Ú¼œÖ€2J$1e809460-5656-4aa5-a28f-fa2d73c61033
 u
-java:S1172<"2Remove this unused method parameter "actionEvent".(ÖÑÕ‰8Ý¼œÖ€2J$6db89979-f3a8-4a49-ba6b-cd5e97077bc7
+java:S1172="2Remove this unused method parameter "actionEvent".(ÖÑÕ‰8Ý¼œÖ€2J$5829ccb5-1cda-44de-a057-9bceec2a1383
 u
-java:S1172J"2Remove this unused method parameter "actionEvent".(§°úà8¡‹žå€2J$a51cf477-77a8-48bb-b3cf-fd671d321cf3
+java:S1172K"2Remove this unused method parameter "actionEvent".(§°úà8¡‹žå€2J$aa3c9be2-eff5-4627-a550-53df6e7aeebe
 u
-java:S1172X"2Remove this unused method parameter "actionEvent".(ÌÛþ8±Ë¢·2J$5e63587b-da50-4b4a-83fe-b95bd5ceacb8
+java:S1172Y"2Remove this unused method parameter "actionEvent".(ÌÛþ8±Ë¢·2J$8d48d16a-64d1-4c53-b95d-050084d8a5af
+z
+java:S1172g"2Remove this unused method parameter "actionEvent".(Çþù¥üÿÿÿÿ8­¹Óè2J$c7cadf3a-fa1f-48fb-a1cd-deaa515cf7df
 t
-java:S1172m"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8­¹Óè2J$c18ec20e-606b-4e80-b611-963c5fc92a95
+java:S1172y"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8‰¶Œ¬‚2J$b22bf72a-e8fc-433e-9f1f-5b90c3805a23

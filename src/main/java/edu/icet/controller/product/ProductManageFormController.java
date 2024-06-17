@@ -87,7 +87,8 @@ public class ProductManageFormController implements Initializable {
                 (inputSize.getText().trim()=="")?0:Integer.parseInt(inputSize.getText()),
                 (inputPrice.getText().trim()=="")?0.0:Double.parseDouble(inputPrice.getText()),
                 (inputQuantity.getText().trim()=="")?0:Integer.parseInt(inputQuantity.getText()),
-                SupplierController.getInstance().searchSupplier((String) inputSupplier.getValue()),
+                //SupplierController.getInstance().searchSupplier((String) inputSupplier.getValue()),
+                (Supplier) inputSupplier.getValue(),
                 (Category) inputCategory.getValue()
         );
         boolean b = productBo.save(product);
@@ -106,7 +107,7 @@ public class ProductManageFormController implements Initializable {
             inputPrice.setText(String.valueOf(product.getPrice()));
             inputQuantity.setText(String.valueOf(product.getQty()));
             inputCategory.setValue(product.getCategory());
-            inputSupplier.setValue(product.getSupplier().getId());
+            inputSupplier.setValue(product.getSupplier());
         }
         else{
             new Alert(Alert.AlertType.WARNING,"No such product..!").show();
@@ -120,7 +121,8 @@ public class ProductManageFormController implements Initializable {
             product.setPrice(Double.valueOf(inputPrice.getText()));
             product.setQty(Integer.valueOf(inputQuantity.getText()));
             product.setCategory((Category) inputCategory.getValue());
-            product.setSupplier(SupplierController.getInstance().searchSupplier(inputSupplier.getId()));
+            //product.setSupplier(SupplierController.getInstance().searchSupplier(inputSupplier.getId()));
+            product.setSupplier((Supplier) inputSupplier.getValue());
             boolean b = productBo.update(product);
             if(b) {
                 new Alert(Alert.AlertType.INFORMATION,"Product updated..!").show();
@@ -160,13 +162,9 @@ public class ProductManageFormController implements Initializable {
     }
 
     private void loadSuppliers() {
-        ObservableList<String> supplierList = FXCollections.observableArrayList();
+        ObservableList<Supplier> supplierList = FXCollections.observableArrayList();
         List<Supplier> suppliers = supplierBo.getAll();
-        suppliers.forEach(
-                supplier -> {
-                    supplierList.add(supplier.getId());
-                }
-        );
+        supplierList.addAll(suppliers);
         inputSupplier.setItems(supplierList);
     }
 

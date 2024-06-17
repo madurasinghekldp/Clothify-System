@@ -18,4 +18,5 @@ public class SupplierTable {
     private String address;
     private String user;
 
+
 }

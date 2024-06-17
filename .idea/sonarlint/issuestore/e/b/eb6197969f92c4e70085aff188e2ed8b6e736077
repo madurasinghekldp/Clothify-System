@@ -1,9 +1,9 @@
 
 q
-java:S1121".Extract the assignment out of this expression.(‘€†8Ï™†å€2J$53f78b24-14d2-46f8-8e49-aa833161347e
+java:S1121".Extract the assignment out of this expression.(‘€†8Ï™†å€2J$41afd1f2-d5b0-4b4b-a508-4112fa011a11
 á
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ì¼óüÿÿÿÿ8á­ğê€2J$2b1a7f56-51de-4f20-b390-2e5be51e92d4
-r	java:S106"+Replace this use of System.out by a logger.(³ğ¸ûÿÿÿÿ8ä­ğê€2J$b1ef27ad-86c1-4717-9142-d76a8f6326e5
-r	java:S106("+Replace this use of System.out by a logger.(·ùßóıÿÿÿÿ8æ­ğê€2J$08765eaa-7e28-4689-8989-17093da0818b
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ì¼óüÿÿÿÿ8á­ğê€2J$aad18344-e0bd-4582-94ca-09ae0cd30436
+r	java:S106"+Replace this use of System.out by a logger.(³ğ¸ûÿÿÿÿ8ä­ğê€2J$74fba6a0-cf9c-4c5f-8bb7-652c2a78648b
+r	java:S106("+Replace this use of System.out by a logger.(·ùßóıÿÿÿÿ8æ­ğê€2J$d4b1a768-1a27-443a-aec8-eeea0771e081
 z
-java:S1128"2Remove this unused import 'edu.icet.dto.Supplier'.(Ûş·üÿÿÿÿ8Óçûê€2J$b7a09bab-5b9d-4c15-8a7f-06496bfb6d43
+java:S1128"2Remove this unused import 'edu.icet.dto.Supplier'.(Ûş·üÿÿÿÿ8Óçûê€2J$b14fc8c5-2045-4c47-8648-5f43c88f8cb9
