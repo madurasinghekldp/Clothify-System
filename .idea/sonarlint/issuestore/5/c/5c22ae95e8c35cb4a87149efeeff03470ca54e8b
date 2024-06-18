@@ -3,3 +3,5 @@ v
 java:S1874!"3Remove this use of "createQuery"; it is deprecated.(„¶‹ù8­¤ÿ¬‚2J$29f4239f-23e0-4872-94c4-86fed0173ed6
 u
 java:S1874+"3Remove this use of "createQuery"; it is deprecated.(ÄÍø8¡¾­‚2J$359d67b7-5bbf-491c-b835-e63bd6a3544b
+]
+java:S1128";Remove this unused import 'edu.icet.entity.CustomerEntity'.(©º‡Áøÿÿÿÿ8ÀşŸä‚2

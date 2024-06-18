@@ -86,11 +86,11 @@
                         </TableView>
                         <TableView fx:id="tblOrder" layoutX="36.0" layoutY="211.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="122.0" prefWidth="618.0" AnchorPane.bottomAnchor="168.00000000000003">
                            <columns>
-                              <TableColumn fx:id="colOrder" maxWidth="1.7976931348623157E308" prefWidth="60.00000077486038" text="Order Id" />
-                              <TableColumn fx:id="colEmployee" maxWidth="1.7976931348623157E308" prefWidth="98.4000129699707" text="Employee" />
-                              <TableColumn fx:id="colPayment" maxWidth="1.7976931348623157E308" prefWidth="109.60005187988281" text="Payment Type" />
-                              <TableColumn fx:id="colCustomer" maxWidth="1.7976931348623157E308" prefWidth="149.60003662109375" text="Customer" />
-                              <TableColumn fx:id="colTotal2" maxWidth="1.7976931348623157E308" prefWidth="108.00003051757812" text="Total" />
+                              <TableColumn fx:id="colOrder" maxWidth="1.7976931348623157E308" prefWidth="87.0" text="Order Id" />
+                              <TableColumn fx:id="colEmployee" maxWidth="1.7976931348623157E308" prefWidth="108.0" text="Employee" />
+                              <TableColumn fx:id="colPayment" maxWidth="1.7976931348623157E308" prefWidth="124.0" text="Payment Type" />
+                              <TableColumn fx:id="colCustomer" maxWidth="1.7976931348623157E308" prefWidth="129.0" text="Customer" />
+                              <TableColumn fx:id="colTotal2" maxWidth="1.7976931348623157E308" prefWidth="81.80001831054688" text="Total" />
                               <TableColumn fx:id="colDate" maxWidth="1.7976931348623157E308" prefWidth="104.0" text="Date" />
                            </columns>
                         </TableView>

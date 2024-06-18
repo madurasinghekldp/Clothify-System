@@ -47,16 +47,15 @@ public class OrderDetailDaoImpl implements OrderDetailDao {
     }
 
     @Override
-    public OrderDetailEntity getById(String id) {
+    public List<OrderDetailEntity> getById(String id) {
         Session session = HibernateUtil.getSession();
         Transaction transaction = null;
-        OrderDetailEntity orderDetail = null;
-
+        List<OrderDetailEntity> orderDetailList =null;
         try {
             transaction = session.beginTransaction();
             Query<OrderDetailEntity> query = session.createQuery("FROM OrderDetailEntity o WHERE o.orderId = :orderId", OrderDetailEntity.class);
             query.setParameter("orderId", id);
-            orderDetail = query.setMaxResults(1).uniqueResult();
+            orderDetailList = query.getResultList();
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) {
@@ -66,7 +65,7 @@ public class OrderDetailDaoImpl implements OrderDetailDao {
         } finally {
             session.close();
         }
-        return orderDetail;
+        return orderDetailList;
     }
 
     @Override

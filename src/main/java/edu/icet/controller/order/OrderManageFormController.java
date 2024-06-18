@@ -2,14 +2,14 @@ package edu.icet.controller.order;
 
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
-import edu.icet.bo.BoFactory;
-import edu.icet.bo.CustomerBo;
-import edu.icet.bo.EmployeeBo;
-import edu.icet.bo.ProductBo;
+import com.mysql.cj.result.LocalDateValueFactory;
+import edu.icet.bo.*;
 import edu.icet.controller.NavigationFormController;
 import edu.icet.controller.product.ProductController;
 import edu.icet.dto.*;
 import edu.icet.dto.tm.CartTable;
+import edu.icet.dto.tm.OrderDetailTable;
+import edu.icet.dto.tm.OrderTable;
 import edu.icet.util.BoType;
 import edu.icet.util.PaymentType;
 import javafx.collections.FXCollections;
@@ -27,7 +27,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -72,9 +74,14 @@ public class OrderManageFormController implements Initializable {
     private ObservableList<CartTable> cartList = FXCollections.observableArrayList();
     private List<Product> updatedProducts = new ArrayList<>();
 
+    private List<OrderDetail> orderDetailList = new ArrayList<>();
+
     private ProductBo productBo = BoFactory.getInstance().getBo(BoType.PRODUCT);
     private CustomerBo customerBo = BoFactory.getInstance().getBo(BoType.CUSTOMER);
     private EmployeeBo employeeBo = BoFactory.getInstance().getBo(BoType.EMPLOYEE);
+
+    private OrderBo orderBo = BoFactory.getInstance().getBo(BoType.ORDER);
+    private OrderDetailBo orderDetailBo = BoFactory.getInstance().getBo(BoType.ORDERDETAIL);
 
     public void setUser(User user){
         this.user = user;
@@ -102,17 +109,23 @@ public class OrderManageFormController implements Initializable {
         product = (Product)inputProduct.getValue();
         Integer qty = inputQty.getText().trim()==""?0:Integer.valueOf(inputQty.getText().trim());
         if(product!=null){
-            if(qty<=product.getQty()){
-                cartList.add(new CartTable(
-                        product.getId(),
-                        product.getName(),
-                        product.getPrice().toString(),
-                        inputQty.getText(),
-                        String.valueOf(qty*product.getPrice())
-                ));
-                total += qty*product.getPrice();
-                product.setQty(product.getQty()-qty);
-                updatedProducts.add(product);
+            if(qty <= product.getQty()){
+                if(!isProductExist(product)){
+                    cartList.add(new CartTable(
+                            product.getId(),
+                            product.getName(),
+                            product.getPrice().toString(),
+                            inputQty.getText(),
+                            String.valueOf(qty*product.getPrice())
+                    ));
+                    total += qty*product.getPrice();
+                    product.setQty(product.getQty()-qty);
+                    updatedProducts.add(product);
+                    orderDetailList.add(new OrderDetail(null,product,qty));
+                }
+                else{
+                    new Alert(Alert.AlertType.WARNING,"Product is already added.").show();
+                }
             }
             else{
                 new Alert(Alert.AlertType.WARNING,"Do not have enough quantity.").show();
@@ -120,9 +133,17 @@ public class OrderManageFormController implements Initializable {
             tblCart.setItems(cartList);
             lblTotal.setText(String.valueOf(total));
         }
-
         inputProduct.setValue(null);
         inputQty.setText("");
+    }
+
+    private boolean isProductExist(Product product) {
+        for(CartTable item: cartList){
+            if(item.getProductId().equals(product.getId())){
+                return true;
+            }
+        }
+        return false;
     }
 
     public void btnSearchOrderOnAction(ActionEvent actionEvent) {
@@ -139,12 +160,62 @@ public class OrderManageFormController implements Initializable {
     }
 
     public void btnReturnOnAction(ActionEvent actionEvent) {
+        if(order!=null){
+
+        }
     }
 
     public void btnPlaceOrderOnAction(ActionEvent actionEvent) {
+        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            order = new Order(
+                    OrderController.getInstance().generateOrderId(),
+                    (Employee) inputEmployee.getValue(),
+                    (Customer) inputCustomer.getValue(),
+                    Double.valueOf(lblTotal.getText()),
+                    (PaymentType) inputPaymentType.getValue(),
+                    f.parse(inputDate.getText())
+            );
+            boolean b = orderBo.save(order);
+            if(b){
+                new Alert(Alert.AlertType.INFORMATION,"Order Added..!").show();
+                updateProducts(updatedProducts);
+                addOrderDetails(order);
+                updatedProducts.clear();
+                orderDetailList.clear();
+                order = null;
+                cartList.clear();
+                tblCart.setItems(cartList);
+                loadOrderTable();
+                loadOrderDetailTable();
+                loadProducts();
+            }
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void updateProducts(List<Product> updatedProducts) {
+        updatedProducts.forEach(
+                updated -> {
+                    productBo.update(updated);
+                }
+        );
+    }
+
+    private void addOrderDetails(Order order) {
+        orderDetailList.forEach(
+                orderDetail -> {
+                    orderDetail.setOrder(order);
+                    orderDetailBo.save(orderDetail);
+                }
+        );
     }
 
     public void btnClearOnAction(ActionEvent actionEvent) {
+        cartList.clear();
+        tblCart.setItems(cartList);
+        loadProducts();
     }
 
     @Override
@@ -155,11 +226,24 @@ public class OrderManageFormController implements Initializable {
         colQty.setCellValueFactory(new PropertyValueFactory<>("qty"));
         colTotal.setCellValueFactory(new PropertyValueFactory<>("total"));
 
+        colOrder.setCellValueFactory(new PropertyValueFactory<>("id"));
+        colEmployee.setCellValueFactory(new PropertyValueFactory<>("employee"));
+        colPayment.setCellValueFactory(new PropertyValueFactory<>("paymentType"));
+        colCustomer.setCellValueFactory(new PropertyValueFactory<>("customer"));
+        colTotal2.setCellValueFactory(new PropertyValueFactory<>("total"));
+        colDate.setCellValueFactory(new PropertyValueFactory<>("date"));
+
+        colOrder2.setCellValueFactory(new PropertyValueFactory<>("order"));
+        colProduct2.setCellValueFactory(new PropertyValueFactory<>("product"));
+        colQty2.setCellValueFactory(new PropertyValueFactory<>("qty"));
+
         loadEmployees();
         loadCustomers();
         loadProducts();
         loadPaymentTypes();
         loadDate();
+        loadOrderTable();
+        loadOrderDetailTable();
 
         inputProduct.getSelectionModel().selectedItemProperty().addListener((observable,oldValue,newValue) ->{
             setQuantity((Product)newValue);
@@ -204,5 +288,40 @@ public class OrderManageFormController implements Initializable {
         List<Employee> employees = employeeBo.getAll();
         employeeList.addAll(employees);
         inputEmployee.setItems(employeeList);
+    }
+
+    private void loadOrderTable(){
+        ObservableList<OrderTable> table = FXCollections.observableArrayList();
+        List<Order> all = orderBo.getAll();
+        all.forEach(
+                order1 -> {
+                    OrderTable otbl = new OrderTable(
+                            order1.getId(),
+                            order1.getEmployee().getId(),
+                            order1.getCustomer().getId(),
+                            String.valueOf(order1.getTotal()),
+                            String.valueOf(order1.getPaymentType()),
+                            String.valueOf(order1.getDate())
+                    );
+                    table.add(otbl);
+                }
+        );
+        tblOrder.setItems(table);
+    }
+
+    private void loadOrderDetailTable(){
+        ObservableList<OrderDetailTable> table = FXCollections.observableArrayList();
+        List<OrderDetail> all = orderDetailBo.getAll();
+        all.forEach(
+                orderDetail -> {
+                    OrderDetailTable odtbl = new OrderDetailTable(
+                            orderDetail.getOrder().getId(),
+                            orderDetail.getProduct().getId(),
+                            String.valueOf(orderDetail.getQty())
+                    );
+                    table.add(odtbl);
+                }
+        );
+        tblOrderDetail.setItems(table);
     }
 }

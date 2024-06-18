@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 @Data
 @AllArgsConstructor
@@ -16,5 +17,5 @@ public class Order {
     private Customer customer;
     private Double total;
     private PaymentType paymentType;
-    private LocalDate date;
+    private Date date;
 }

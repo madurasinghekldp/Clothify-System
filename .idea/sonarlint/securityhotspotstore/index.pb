@@ -173,3 +173,7 @@ _
 /src/main/java/edu/icet/bo/impl/OrderBoImpl.java,4\0\40a2db7868ca83681952fe52f47d6d73ee5ff661
 e
 5src/main/java/edu/icet/bo/impl/OrderDetailBoImpl.java,2\4\2428bd63b9dd2a8c27b5fb59e84aaa5eabc17762
+]
+-src/main/java/edu/icet/dto/tm/OrderTable.java,8\4\8410df4a2ee4a71fa04591754a36c3085a1fe0b4
+c
+3src/main/java/edu/icet/dto/tm/OrderDetailTable.java,4\e\4e0cf6cb0bbf2f7289b7bdafa55f9ede70d72f05
