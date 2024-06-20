@@ -71,6 +71,9 @@
                         <JFXComboBox fx:id="inputCustomer" focusColor="#da6969" layoutX="48.0" layoutY="234.0" prefHeight="26.0" prefWidth="144.0" promptText="Customer" unFocusColor="#da6969" />
                         <Label layoutX="210.0" layoutY="366.0" prefHeight="26.0" prefWidth="55.0" text="Available" />
                         <Label fx:id="lblQty" layoutX="283.0" layoutY="367.0" prefHeight="26.0" prefWidth="43.0" text="0" />
+                        <JFXButton layoutX="214.0" layoutY="301.0" onAction="#btnSelectProductOnAction" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: DA6969;" text="&gt;" textFill="WHITE" />
+                        <JFXButton layoutX="214.0" layoutY="237.0" onAction="#btnSelectCustomerOnAction" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: DA6969;" text="&gt;" textFill="WHITE" />
+                        <JFXButton layoutX="214.0" layoutY="173.0" onAction="#btnSelectEmployeeOnAction" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: DA6969;" text="&gt;" textFill="WHITE" />
                      </children>
                   </AnchorPane>
                   <AnchorPane prefHeight="432.0" prefWidth="445.0" GridPane.columnIndex="1">

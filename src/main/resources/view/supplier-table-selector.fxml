@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.supplier.SupplierSelectorForm">
+   <children>
+      <TableView fx:id="tblSupplier" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="355.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="colId" maxWidth="1.7976931348623157E308" prefWidth="76.0" text="Id" />
+            <TableColumn fx:id="colName" maxWidth="1.7976931348623157E308" prefWidth="111.20001220703125" text="Name" />
+            <TableColumn fx:id="colCompany" maxWidth="1.7976931348623157E308" prefWidth="116.79998779296875" text="Company" />
+            <TableColumn fx:id="colEmail" maxWidth="1.7976931348623157E308" prefWidth="162.39996337890625" text="Email" />
+            <TableColumn fx:id="colAddress" maxWidth="1.7976931348623157E308" prefWidth="135.20001220703125" text="Address" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="487.0" layoutY="361.0" onAction="#btnSelectSupplierOnAction" prefHeight="24.0" prefWidth="82.0" style="-fx-background-color: DA6969;" text="Select" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.product.ProductSelectorForm">
+   <children>
+      <TableView fx:id="tblProduct" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="358.0" prefWidth="628.0">
+         <columns>
+            <TableColumn fx:id="colId" maxWidth="1.7976931348623157E308" prefWidth="91.20001065731049" text="Id" />
+            <TableColumn fx:id="colName" maxWidth="1.7976931348623157E308" prefWidth="128.00000762939453" text="Name" />
+            <TableColumn fx:id="colSize" maxWidth="1.7976931348623157E308" prefWidth="96.800048828125" text="Size" />
+            <TableColumn fx:id="colPrice" maxWidth="1.7976931348623157E308" prefWidth="93.5999755859375" text="Price" />
+            <TableColumn fx:id="colQuantity" maxWidth="1.7976931348623157E308" prefWidth="112.79989624023438" text="Quantity" />
+            <TableColumn fx:id="colCategory" maxWidth="1.7976931348623157E308" prefWidth="106.4000244140625" text="Category" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="524.0" layoutY="364.0" onAction="#btnSelectProductOnAction" prefHeight="24.0" prefWidth="82.0" style="-fx-background-color: DA6969;" text="Select" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

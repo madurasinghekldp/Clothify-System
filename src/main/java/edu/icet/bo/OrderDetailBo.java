@@ -13,6 +13,7 @@ public interface OrderDetailBo extends SuperBo{
     List<OrderDetail> getAll();
 
     OrderDetail getById(String id);
+    List<OrderDetail> getByOrder(String id);
 
     boolean update(OrderDetail dto);
 

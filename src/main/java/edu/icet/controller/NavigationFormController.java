@@ -8,15 +8,28 @@ import edu.icet.controller.product.ProductManageFormController;
 import edu.icet.controller.supplier.SupplierManageFormController;
 import edu.icet.controller.user.UserManageFormController;
 import edu.icet.dto.User;
+import edu.icet.util.OTPGenerator;
+import edu.icet.util.SendMailUtil;
+import edu.icet.util.UserType;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.layout.RowConstraints;
 import javafx.stage.Stage;
+import org.hibernate.engine.spi.SharedSessionContractImplementor;
+import org.hibernate.loader.ast.spi.AfterLoadAction;
+import org.hibernate.metamodel.mapping.EntityMappingType;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class NavigationFormController {
+public class NavigationFormController implements Initializable{
     public JFXButton btnManageUser;
+    public JFXButton btnmanageEmployee;
+    public RowConstraints userRow;
+    public RowConstraints employeeRow;
 
     private Stage stage;
 
@@ -28,6 +41,16 @@ public class NavigationFormController {
 
     public void setUser(User user){
         this.user = user;
+        init();
+    }
+
+    private void init(){
+        if(user.getType()==UserType.USER){
+            userRow.setMaxHeight(0);
+            employeeRow.setMaxHeight(0);
+            btnmanageEmployee.setVisible(false);
+            btnManageUser.setVisible(false);
+        }
     }
 
     public void btnManageUserOnAction(ActionEvent actionEvent) {
@@ -65,6 +88,7 @@ public class NavigationFormController {
             ProductManageFormController controller = loader.getController();
             controller.setStage(stage);
             controller.setUser(user);
+            controller.setLoader(loader);
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
@@ -107,6 +131,7 @@ public class NavigationFormController {
             OrderManageFormController controller = loader.getController();
             controller.setStage(stage);
             controller.setUser(user);
+            controller.setLoader(loader);
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
@@ -116,6 +141,16 @@ public class NavigationFormController {
 
 
     public void btnChangePasswordOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/reset-password-form.fxml"));
+            Scene scene = new Scene(loader.load());
+            ResetPasswordFormController controller = loader.getController();
+            controller.setStage(stage);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void btnGoBackOnAction(ActionEvent actionEvent) {
@@ -129,5 +164,11 @@ public class NavigationFormController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
     }
 }

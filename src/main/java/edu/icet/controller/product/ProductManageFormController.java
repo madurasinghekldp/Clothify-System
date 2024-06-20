@@ -6,7 +6,9 @@ import edu.icet.bo.BoFactory;
 import edu.icet.bo.ProductBo;
 import edu.icet.bo.SupplierBo;
 import edu.icet.controller.NavigationFormController;
+import edu.icet.controller.customer.CustomerSelectorForm;
 import edu.icet.controller.supplier.SupplierController;
+import edu.icet.controller.supplier.SupplierSelectorForm;
 import edu.icet.dto.Product;
 import edu.icet.dto.Supplier;
 import edu.icet.dto.User;
@@ -54,6 +56,8 @@ public class ProductManageFormController implements Initializable {
 
     private Product product;
 
+    private FXMLLoader productLoader;
+
     private ProductBo productBo = BoFactory.getInstance().getBo(BoType.PRODUCT);
 
     private SupplierBo supplierBo = BoFactory.getInstance().getBo(BoType.SUPPLIER);
@@ -64,6 +68,10 @@ public class ProductManageFormController implements Initializable {
 
     public void setUser(User user){
         this.user = user;
+    }
+
+    public void setLoader(FXMLLoader loader){
+        this.productLoader = loader;
     }
 
     public void btnGoBackOnAction(ActionEvent actionEvent) {
@@ -205,5 +213,19 @@ public class ProductManageFormController implements Initializable {
         inputCategory.setValue(null);
         inputSupplier.setValue(null);
         product = null;
+    }
+
+    public void btnSelectSupplierOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/supplier-table-selector.fxml"));
+            Scene scene = new Scene(loader.load());
+            SupplierSelectorForm controller = loader.getController();
+            controller.setLoader(productLoader);
+            Stage stage1 = new Stage();
+            stage1.setScene(scene);
+            stage1.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -2,10 +2,11 @@ package edu.icet.controller.order;
 
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
-import com.mysql.cj.result.LocalDateValueFactory;
 import edu.icet.bo.*;
 import edu.icet.controller.NavigationFormController;
-import edu.icet.controller.product.ProductController;
+import edu.icet.controller.customer.CustomerSelectorForm;
+import edu.icet.controller.employee.EmployeeSelectorForm;
+import edu.icet.controller.product.ProductSelectorForm;
 import edu.icet.dto.*;
 import edu.icet.dto.tm.CartTable;
 import edu.icet.dto.tm.OrderDetailTable;
@@ -29,11 +30,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class OrderManageFormController implements Initializable {
     public JFXTextField inputId;
@@ -71,6 +68,8 @@ public class OrderManageFormController implements Initializable {
 
     private Double total=0.0;
 
+    private FXMLLoader orderLoader;
+
     private ObservableList<CartTable> cartList = FXCollections.observableArrayList();
     private List<Product> updatedProducts = new ArrayList<>();
 
@@ -89,6 +88,10 @@ public class OrderManageFormController implements Initializable {
 
     public void setStage(Stage stage){
         this.stage = stage;
+    }
+
+    public void setLoader(FXMLLoader loader){
+        this.orderLoader = loader;
     }
 
     public void btnGoBackOnAction(ActionEvent actionEvent) {
@@ -148,11 +151,12 @@ public class OrderManageFormController implements Initializable {
 
     public void btnSearchOrderOnAction(ActionEvent actionEvent) {
         order = OrderController.getInstance().searchOrder(inputId.getText());
+
         if(order!=null){
             inputDate.setText(String.valueOf(order.getDate()));
             inputEmployee.setValue(order.getEmployee());
             inputCustomer.setValue(order.getCustomer());
-
+            orderDetailList = orderDetailBo.getByOrder(order.getId());
         }
         else{
             new Alert(Alert.AlertType.WARNING,"No such order..!").show();
@@ -161,8 +165,30 @@ public class OrderManageFormController implements Initializable {
 
     public void btnReturnOnAction(ActionEvent actionEvent) {
         if(order!=null){
-
+            orderDetailList.forEach(
+                    orderDetail ->{
+                        Product product = orderDetail.getProduct();
+                        Integer qty = orderDetail.getQty();
+                        product.setQty(product.getQty()+qty);
+                        orderDetailBo.delete(orderDetail);
+                        productBo.update(product);
+                    }
+            );
+            boolean deleted = orderBo.delete(order);
+            if(deleted){
+                new Alert(Alert.AlertType.INFORMATION,"Order deleted..!").show();
+                order = null;
+                orderDetailList.clear();
+                loadOrderTable();
+                loadOrderDetailTable();
+                loadProducts();
+            }
+            else{
+                new Alert(Alert.AlertType.ERROR,"Order can not be deleted..!").show();
+            }
         }
+        inputCustomer.setValue(null);
+        inputEmployee.setValue(null);
     }
 
     public void btnPlaceOrderOnAction(ActionEvent actionEvent) {
@@ -323,5 +349,47 @@ public class OrderManageFormController implements Initializable {
                 }
         );
         tblOrderDetail.setItems(table);
+    }
+
+    public void btnSelectProductOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/product-table-selector.fxml"));
+            Scene scene = new Scene(loader.load());
+            ProductSelectorForm controller = loader.getController();
+            controller.setLoader(orderLoader);
+            Stage stage1 = new Stage();
+            stage1.setScene(scene);
+            stage1.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void btnSelectCustomerOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/customer-table-selector.fxml"));
+            Scene scene = new Scene(loader.load());
+            CustomerSelectorForm controller = loader.getController();
+            controller.setLoader(orderLoader);
+            Stage stage1 = new Stage();
+            stage1.setScene(scene);
+            stage1.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void btnSelectEmployeeOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/employee-table-selector.fxml"));
+            Scene scene = new Scene(loader.load());
+            EmployeeSelectorForm controller = loader.getController();
+            controller.setLoader(orderLoader);
+            Stage stage1 = new Stage();
+            stage1.setScene(scene);
+            stage1.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

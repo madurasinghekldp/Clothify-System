@@ -1,0 +1,31 @@
+
+r
+java:S3740"/Provide the parametrized type for this generic.(’¬û8í¬¶·ƒ2J$4125868d-90bc-402b-a683-b4804068a8ac
+r
+java:S3740"/Provide the parametrized type for this generic.(“ĞÃâ8şĞ¶·ƒ2J$dc198490-3601-43ec-9918-2768d49b3b2d
+w
+java:S3740"/Provide the parametrized type for this generic.(ÊÚÎ¨ùÿÿÿÿ8¾è¶·ƒ2J$16f4cca2-5db4-46ec-91f4-deae7421b2b8
+w
+java:S3740"/Provide the parametrized type for this generic.(°Äˆ´ÿÿÿÿÿ8¤ş¶·ƒ2J$d859dc9d-266a-4f54-832b-68c9e96dfaf3
+r
+java:S3740"/Provide the parametrized type for this generic.(ƒäÆ8¬—··ƒ2J$1d947ed5-598a-4a5c-b045-a24de17b5990
+r
+java:S3740"/Provide the parametrized type for this generic.(¯ÿı°8Æ°··ƒ2J$c3f79fbb-f42e-4f81-8f3f-f718ed32c393
+š
+java:S1104"WMake tblEmployee a static final constant or non-public and provide accessors if needed.(’¬û8î¬¶·ƒ2J$0c0a6b51-1d7d-4d22-aa79-6050221dbf8b
+”
+java:S1104"QMake colId a static final constant or non-public and provide accessors if needed.(“ĞÃâ8ÿĞ¶·ƒ2J$f4ae7518-cbac-492b-a964-8dfb75bff617
+›
+java:S1104"SMake colName a static final constant or non-public and provide accessors if needed.(ÊÚÎ¨ùÿÿÿÿ8¿è¶·ƒ2J$e539b7a9-de12-402c-8e24-d61dbfd56932
+
+java:S1104"VMake colCompany a static final constant or non-public and provide accessors if needed.(°Äˆ´ÿÿÿÿÿ8¥ş¶·ƒ2J$a4fbe9dd-6254-41ec-9f8a-690eb7ee51f7
+—
+java:S1104"TMake colEmail a static final constant or non-public and provide accessors if needed.(ƒäÆ8­—··ƒ2J$a149c97b-2bf5-4bce-b759-d3a52f436628
+™
+java:S1104"VMake colAddress a static final constant or non-public and provide accessors if needed.(¯ÿı°8È°··ƒ2J$57f19032-9ec1-47dc-b654-11e6d11b9b66
+z
+java:S1172)"2Remove this unused method parameter "actionEvent".(Ä´„îûÿÿÿÿ8ÍÈÀ·ƒ2J$6bb58181-5f2c-4851-9c17-36be2df7af33
+
+java:S1128"JRemove this unused import 'edu.icet.controller.product.ProductController'.(áÛƒ¨8½ĞÃ·ƒ2J$1e2b0091-3364-4a70-9c9a-e161e3b55d2b
+
+java:S1128	"9Remove this unused import 'edu.icet.dto.tm.ProductTable'.(½ŠÑşÿÿÿÿ8½ĞÃ·ƒ2J$94859591-e51a-4674-b3ae-67f54d16f0e5

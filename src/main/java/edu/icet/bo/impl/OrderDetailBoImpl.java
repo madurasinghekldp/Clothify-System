@@ -50,6 +50,18 @@ public class OrderDetailBoImpl implements OrderDetailBo {
     }
 
     @Override
+    public List<OrderDetail> getByOrder(String id) {
+        List<OrderDetailEntity> list = orderDetailDao.getByOrder(id);
+        List<OrderDetail> all = new ArrayList<>();
+        list.forEach(
+                orderDetailEntity -> {
+                    all.add(new ModelMapper().map(orderDetailEntity,OrderDetail.class));
+                }
+        );
+        return all;
+    }
+
+    @Override
     public boolean update(OrderDetail dto) {
         return false;
     }

@@ -1,0 +1,33 @@
+
+r
+java:S3740"/Provide the parametrized type for this generic.(ìÒÑŒ8¼ÿŠ¸ƒ2J$c299d0e0-a1e7-49d0-81fe-dab9da4cb204
+r
+java:S3740"/Provide the parametrized type for this generic.(“ĞÃâ8îÛ‹¸ƒ2J$679ff9e5-ebcb-4771-b84b-1edb420976e7
+w
+java:S3740"/Provide the parametrized type for this generic.(ÊÚÎ¨ùÿÿÿÿ8ìÿ‹¸ƒ2J$4d503783-b069-4406-abb9-30a187125295
+w
+java:S3740"/Provide the parametrized type for this generic.(°Äˆ´ÿÿÿÿÿ8‡™Œ¸ƒ2J$6e627975-2c16-46d8-bb93-65804002c603
+r
+java:S3740"/Provide the parametrized type for this generic.(ƒäÆ8ğ®Œ¸ƒ2J$aeefc6a9-adec-4b39-9164-de7513fd826f
+r
+java:S3740 "/Provide the parametrized type for this generic.(¯ÿı°8äÆŒ¸ƒ2J$7f82139f-4d75-4554-8e85-168dcda1fc4d
+š
+java:S1104"WMake tblSupplier a static final constant or non-public and provide accessors if needed.(ìÒÑŒ8½ÿŠ¸ƒ2J$10889e30-003e-41d6-9eae-d249c957e38a
+”
+java:S1104"QMake colId a static final constant or non-public and provide accessors if needed.(“ĞÃâ8ïÛ‹¸ƒ2J$0bba4c33-ca04-4842-a7b7-3903889103c4
+›
+java:S1104"SMake colName a static final constant or non-public and provide accessors if needed.(ÊÚÎ¨ùÿÿÿÿ8íÿ‹¸ƒ2J$659d5c7b-838e-47aa-ac24-ef7398ab8398
+
+java:S1104"VMake colCompany a static final constant or non-public and provide accessors if needed.(°Äˆ´ÿÿÿÿÿ8ˆ™Œ¸ƒ2J$f01eefb0-95c6-403f-8124-f116c7ea1dad
+—
+java:S1104"TMake colEmail a static final constant or non-public and provide accessors if needed.(ƒäÆ8ñ®Œ¸ƒ2J$ac58fd03-40ba-4d76-a22e-5c42d14da9fc
+™
+java:S1104 "VMake colAddress a static final constant or non-public and provide accessors if needed.(¯ÿı°8æÆŒ¸ƒ2J$e6355a33-4743-42cf-a9c8-7bf419d9db75
+z
+java:S11725"2Remove this unused method parameter "actionEvent".(¢‡ˆÑûÿÿÿÿ8ı…«¸ƒ2J$e0276766-e797-4a45-931d-2a4ac368208c
+i
+java:S1128"LRemove this unused import 'edu.icet.controller.employee.EmployeeController'.(”ù¥Ô8ó°¸ƒ2
+m
+java:S1128"PRemove this unused import 'edu.icet.controller.order.OrderManageFormController'.(¬‘Ô8ó°¸ƒ2
+V
+java:S1128	":Remove this unused import 'edu.icet.dto.tm.EmployeeTable'.(ƒ¯Şg8ó°¸ƒ2

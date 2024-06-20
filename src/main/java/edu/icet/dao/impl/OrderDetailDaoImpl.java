@@ -2,10 +2,8 @@ package edu.icet.dao.impl;
 
 import edu.icet.dao.OrderDetailDao;
 import edu.icet.entity.OrderDetailEntity;
-import edu.icet.entity.OrderEntity;
 import edu.icet.util.HibernateUtil;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
 import java.util.List;
@@ -47,25 +45,9 @@ public class OrderDetailDaoImpl implements OrderDetailDao {
     }
 
     @Override
-    public List<OrderDetailEntity> getById(String id) {
-        Session session = HibernateUtil.getSession();
-        Transaction transaction = null;
-        List<OrderDetailEntity> orderDetailList =null;
-        try {
-            transaction = session.beginTransaction();
-            Query<OrderDetailEntity> query = session.createQuery("FROM OrderDetailEntity o WHERE o.orderId = :orderId", OrderDetailEntity.class);
-            query.setParameter("orderId", id);
-            orderDetailList = query.getResultList();
-            transaction.commit();
-        } catch (Exception e) {
-            if (transaction != null) {
-                transaction.rollback();
-            }
-            e.printStackTrace();
-        } finally {
-            session.close();
-        }
-        return orderDetailList;
+    public OrderDetailEntity getById(String id) {
+
+        return null;
     }
 
     @Override
@@ -97,5 +79,17 @@ public class OrderDetailDaoImpl implements OrderDetailDao {
         catch(Exception e){
             return false;
         }
+    }
+
+    @Override
+    public List<OrderDetailEntity> getByOrder(String id) {
+        Session session = HibernateUtil.getSession();
+        session.getTransaction().begin();
+        Query<OrderDetailEntity> query = session.createQuery("FROM OrderDetailEntity WHERE order.id = :orderId", OrderDetailEntity.class);
+        query.setParameter("orderId", id);
+        List<OrderDetailEntity> orderDetailList = query.getResultList();
+        session.getTransaction().commit();
+        session.close();
+        return orderDetailList;
     }
 }

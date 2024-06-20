@@ -1,19 +1,27 @@
 
 ¡
-java:S1104"YMake btnManageUser a static final constant or non-public and provide accessors if needed.(ìˆ¦´ÿÿÿÿÿ8¯¼œÖ€2J$35e49ceb-2526-45b2-a7ea-ca3913590d19
-Ã
-java:S1186v"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ïÁ Y8À¼œÖ€2J$458b72d1-5901-4a03-b3b2-fb5a4925ec17
+java:S1104"YMake btnManageUser a static final constant or non-public and provide accessors if needed.(ìˆ¦´ÿÿÿÿÿ8‚õˆ‰ƒ2J$02862bbd-c8c2-4b2e-bedc-66aab72c9030
+ 
+java:S1104"]Make btnmanageEmployee a static final constant or non-public and provide accessors if needed.(–áŞ8ƒõˆ‰ƒ2J$add3d1c1-abad-4f1a-a7ac-e9344936d3ef
+›
+java:S1104"SMake userRow a static final constant or non-public and provide accessors if needed.(êºÂœıÿÿÿÿ8ƒõˆ‰ƒ2J$be64812e-9f57-46b8-a3c6-de847dcaa8a0
+š
+java:S1104 "WMake employeeRow a static final constant or non-public and provide accessors if needed.(şæ£8ƒõˆ‰ƒ2J$14ead892-d7c6-4fdd-952a-d82053fa005f
+Ê
+java:S1186«"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8—õˆ‰ƒ2J$8eb5a0e2-5e40-4799-b41d-576497623b2e
 u
-java:S1172!"2Remove this unused method parameter "actionEvent".(¹ê”§8Å¼œÖ€2J$c40ba947-1bba-413a-8eb4-9f36b0c666b4
+java:S11728"2Remove this unused method parameter "actionEvent".(¹ê”§8›õˆ‰ƒ2J$a7e7c5db-5306-4e32-bf23-0fbb8d21a857
 z
-java:S1172/"2Remove this unused method parameter "actionEvent".(÷ Ùëÿÿÿÿÿ8Ú¼œÖ€2J$1e809460-5656-4aa5-a28f-fa2d73c61033
+java:S1172F"2Remove this unused method parameter "actionEvent".(÷ Ùëÿÿÿÿÿ8¬õˆ‰ƒ2J$c7af4215-ac34-4b57-9995-8acce432c6a8
 u
-java:S1172="2Remove this unused method parameter "actionEvent".(ÖÑÕ‰8İ¼œÖ€2J$5829ccb5-1cda-44de-a057-9bceec2a1383
+java:S1172T"2Remove this unused method parameter "actionEvent".(ÖÑÕ‰8®õˆ‰ƒ2J$283bcad8-41cc-46b3-a747-85ccde6b02bb
 u
-java:S1172K"2Remove this unused method parameter "actionEvent".(§°úà8¡‹å€2J$aa3c9be2-eff5-4627-a550-53df6e7aeebe
+java:S1172c"2Remove this unused method parameter "actionEvent".(§°úà8°õˆ‰ƒ2J$652a990b-6673-4356-a21d-fc0fd03754c0
 u
-java:S1172Y"2Remove this unused method parameter "actionEvent".(ÌÛş8±Ë¢·2J$8d48d16a-64d1-4c53-b95d-050084d8a5af
+java:S1172q"2Remove this unused method parameter "actionEvent".(ÌÛş8²õˆ‰ƒ2J$d48aceb6-61a8-473f-9a02-e0593db00145
 z
-java:S1172g"2Remove this unused method parameter "actionEvent".(Çşù¥üÿÿÿÿ8­¹Óè2J$c7cadf3a-fa1f-48fb-a1cd-deaa515cf7df
-t
-java:S1172y"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8‰¶Œ¬‚2J$b22bf72a-e8fc-433e-9f1f-5b90c3805a23
+java:S1172"2Remove this unused method parameter "actionEvent".(Çşù¥üÿÿÿÿ8´õˆ‰ƒ2J$6713fdbf-1e88-44e8-90e8-f6ebadf9091d
+u
+java:S1172"2Remove this unused method parameter "actionEvent".(ïÁ Y8µõˆ‰ƒ2J$1c7ec180-a373-4332-ab79-d45250177114
+u
+java:S1172œ"2Remove this unused method parameter "actionEvent".(ÿ¬Úw8¶õˆ‰ƒ2J$cba86dd3-b07e-4923-b865-1c1485ce908d
