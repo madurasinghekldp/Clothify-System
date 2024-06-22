@@ -7,6 +7,7 @@ import edu.icet.controller.user.UserBuilder;
 import edu.icet.dto.User;
 import edu.icet.util.BoType;
 import edu.icet.util.Encryptor;
+import edu.icet.util.PasswordValidator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -52,19 +53,25 @@ public class FinalRegisterFormController {
         UserBuilder build = builder
                 .setId(generateUserId())
                 .setPassword(new Encryptor().getEncryptedPassword(inputPassword.getText()));
-        User user = build.getUser();
-        boolean saved = userBo.save(user);
-        if(saved){
-            try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/home-form.fxml"));
-                Scene scene = new Scene(loader.load());
-                HomeFormController controller = loader.getController();
-                controller.setStage(stage);
-                stage.setScene(scene);
-                stage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
+        if(PasswordValidator.getInstance().isValidPassword(inputPassword.getText())){
+            User user = build.getUser();
+            boolean saved = userBo.save(user);
+            if(saved){
+                try {
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/home-form.fxml"));
+                    Scene scene = new Scene(loader.load());
+                    HomeFormController controller = loader.getController();
+                    controller.setStage(stage);
+                    stage.setScene(scene);
+                    stage.show();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+        }
+        else{
+            new Alert(Alert.AlertType.ERROR,"Password must contain at least 8 characters with " +
+                    "\nnumbers and letters.").show();
         }
     }
 

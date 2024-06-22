@@ -6,9 +6,11 @@ import edu.icet.bo.UserBo;
 import edu.icet.dto.User;
 import edu.icet.util.BoType;
 import edu.icet.util.Encryptor;
+import edu.icet.util.PasswordValidator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -52,19 +54,25 @@ public class FinalPasswordChangeFormController {
 
 
     public void btnChangePasswordOnAction(ActionEvent actionEvent) {
-        user.setPassword(new Encryptor().getEncryptedPassword(inputPassword.getText()));
-        boolean updated = userBo.update(user);
-        if(updated){
-            try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/home-form.fxml"));
-                Scene scene = new Scene(loader.load());
-                HomeFormController controller = loader.getController();
-                controller.setStage(stage);
-                stage.setScene(scene);
-                stage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
+        if(PasswordValidator.getInstance().isValidPassword(inputPassword.getText())){
+            user.setPassword(new Encryptor().getEncryptedPassword(inputPassword.getText()));
+            boolean updated = userBo.update(user);
+            if(updated){
+                try {
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/home-form.fxml"));
+                    Scene scene = new Scene(loader.load());
+                    HomeFormController controller = loader.getController();
+                    controller.setStage(stage);
+                    stage.setScene(scene);
+                    stage.show();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+        }
+        else{
+            new Alert(Alert.AlertType.ERROR,"Password must contain at least 8 characters with " +
+                    "\nnumbers and letters.").show();
         }
     }
 }
