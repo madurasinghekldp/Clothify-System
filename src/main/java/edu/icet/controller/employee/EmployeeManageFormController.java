@@ -8,6 +8,7 @@ import edu.icet.dto.Employee;
 import edu.icet.dto.User;
 import edu.icet.dto.tm.EmployeeTable;
 import edu.icet.util.BoType;
+import edu.icet.util.DBConnection;
 import edu.icet.util.EmailValidator;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -20,9 +21,17 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.engine.design.JRDesignQuery;
+import net.sf.jasperreports.engine.design.JasperDesign;
+import net.sf.jasperreports.engine.xml.JRXmlLoader;
+import net.sf.jasperreports.view.JasperViewer;
 
+import javax.swing.*;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -168,5 +177,25 @@ public class EmployeeManageFormController implements Initializable {
         inputEmail.setText("");
         inputAddress.setText("");
         employee = null;
+    }
+
+    public void btnGetEmployeeReportOnAction(ActionEvent actionEvent) {
+        try {
+            InputStream inputStream = getClass().getResourceAsStream("/reports/Employees.jrxml");
+            JasperDesign design = JRXmlLoader.load(inputStream);
+            JRDesignQuery designQuery = new JRDesignQuery();
+            designQuery.setText("select * from employeeentity");
+            design.setQuery(designQuery);
+            JasperReport jasperReport = JasperCompileManager.compileReport(design);
+            JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, null, DBConnection.getInstance().getConnection());
+            // Create a JasperViewer instance and set its properties
+            JasperViewer viewer = new JasperViewer(jasperPrint, false);
+            viewer.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+
+            // Display the report viewer
+            viewer.setVisible(true);
+        } catch (JRException | SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

@@ -189,3 +189,5 @@ t
 Dsrc/main/java/edu/icet/controller/supplier/SupplierSelectorForm.java,1\1\118fb07696f84981fee30b1c573c5284207146f5
 b
 2src/main/java/edu/icet/util/PasswordValidator.java,c\5\c55c5d9eceb791b48b2b23209050ea95137e5d9a
+]
+-src/main/java/edu/icet/util/DBConnection.java,7\d\7d9d266b84418b392d8e0bb46a116ea690572fdd

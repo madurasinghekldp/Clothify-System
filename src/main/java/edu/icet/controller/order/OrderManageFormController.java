@@ -12,6 +12,7 @@ import edu.icet.dto.tm.CartTable;
 import edu.icet.dto.tm.OrderDetailTable;
 import edu.icet.dto.tm.OrderTable;
 import edu.icet.util.BoType;
+import edu.icet.util.DBConnection;
 import edu.icet.util.PaymentType;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -25,9 +26,18 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.engine.design.JRDesignParameter;
+import net.sf.jasperreports.engine.design.JRDesignQuery;
+import net.sf.jasperreports.engine.design.JasperDesign;
+import net.sf.jasperreports.engine.xml.JRXmlLoader;
+import net.sf.jasperreports.view.JasperViewer;
 
+import javax.swing.*;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -209,6 +219,7 @@ public class OrderManageFormController implements Initializable {
                 addOrderDetails(order);
                 updatedProducts.clear();
                 orderDetailList.clear();
+                generateBill();
                 order = null;
                 cartList.clear();
                 tblCart.setItems(cartList);
@@ -217,6 +228,47 @@ public class OrderManageFormController implements Initializable {
                 loadProducts();
             }
         } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void generateBill() {
+        try {
+            InputStream inputStream = getClass().getResourceAsStream("/reports/CustomerBill.jrxml");
+            JasperDesign design = JRXmlLoader.load(inputStream);
+            JRDesignQuery designQuery = new JRDesignQuery();
+            designQuery.setText("select orderentity.id,\n" +
+                    "customerentity.name,\n" +
+                    "customerentity.email,\n" +
+                    "orderentity.total,\n" +
+                    "orderdetailentity.qty,\n" +
+                    "orderdetailentity.productId,\n" +
+                    "productentity.price\n" +
+                    "from customerentity inner join orderentity inner join orderdetailentity inner join\n" +
+                    "productentity\n" +
+                    "on customerentity.id = orderentity.customerId and \n" +
+                    "orderentity.id = orderdetailentity.orderId and\n" +
+                    "orderdetailentity.productId = productentity.id where orderentity.id = $P{id}");
+            design.setQuery(designQuery);
+
+            JRDesignParameter parameter = new JRDesignParameter();
+            parameter.setName("id");
+            parameter.setValueClass(String.class);
+            design.addParameter(parameter);
+
+            JasperReport jasperReport = JasperCompileManager.compileReport(design);
+
+            Map<String, Object> parameters = new HashMap<>();
+            parameters.put("id", order.getId());
+
+            JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, DBConnection.getInstance().getConnection());
+            // Create a JasperViewer instance and set its properties
+            JasperViewer viewer = new JasperViewer(jasperPrint, false);
+            viewer.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+
+            // Display the report viewer
+            viewer.setVisible(true);
+        } catch (JRException | SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
     }

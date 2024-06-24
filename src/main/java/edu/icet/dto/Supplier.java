@@ -20,6 +20,6 @@ public class Supplier {
 
     @Override
     public String toString() {
-        return id+" | "+name+" | "+company;
+        return id+"";
     }
 }

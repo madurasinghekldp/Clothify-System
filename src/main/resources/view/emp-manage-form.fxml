@@ -85,6 +85,7 @@
                                         <TableColumn fx:id="colCreator" maxWidth="1.7976931348623157E308" prefWidth="104.0" text="Modified By" />
                                     </columns>
                                 </TableView>
+                        <JFXButton layoutX="37.0" layoutY="109.0" onAction="#btnGetEmployeeReportOnAction" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: DA6969;" text="Get Report" textFill="WHITE" />
                             </children>
                         </AnchorPane>
                     </children>

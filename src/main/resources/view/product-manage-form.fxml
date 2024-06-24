@@ -90,6 +90,7 @@
                               <TableColumn fx:id="colSupplier" maxWidth="1.7976931348623157E308" prefWidth="93.5999755859375" text="Supplier" />
                            </columns>
                         </TableView>
+                        <JFXButton layoutX="37.0" layoutY="105.0" onAction="#btnGetSupplierReportOnAction" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: DA6969;" text="Get Report" textFill="WHITE" />
                      </children>
                   </AnchorPane>
                </children>
